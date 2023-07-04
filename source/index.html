@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Акселератор. Проект №1. Сайт центра SuperGym - самого большого фитнес центра за Уралом ">
     <title>Фитнесс центр SuperGym в Омске</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -17,11 +17,43 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+              <div class="header__nav">
+                <a class="header__logo" href="index.html">
+                  <img src="./img/logo.svg" width="122" height="44" alt="Логотип Supergym.">
+                </a>
+                <div class="header__contacts">
+                  <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+                </div>
+              </div>
+              <div class="header__hero hero">
+                <div class="hero__wrapper">
+                  <div class="hero__title">
+                    <p>Омск</p>
+                    <h1>Фитнес центр</h1>
+                  </div>
+                  <ul class="hero__list">
+                    <li class="hero__list-item">Тренажёрный зал</li>
+                    <li class="hero__list-item">Групповые занятия</li>
+                    <li class="hero__list-item">Кардио-зона</li>
+                  </ul>
+                  <a class="button" href="#membership">Купить абонемент</a>
+                </div>
+                <div class="hero__image-wrapper">
+                 <picture>
+                  <source type="image/webp" media="(max-width:1199px)" srcset="./img/hero/hero-desktop@1x.webp, ./img/hero/hero-desktop@2x.webp 2x" width="500" height="556">
+                  <source type="image/webp" media="(max-width:767px)" srcset="./img/hero/hero-tablet@1x.webp, ./img/hero/hero-tablet@2x.webp 2x" width="324" height="390">
+                  <img class="hero__image" src="./img/hero/hero-desktop@1x.jpg" srcset="./img/hero/hero-desktop@2x.jpg" width="500" height="556" alt="Тренер-супермен.">
+                 </picture>
+                </div>
+              </div>
+          </div>
+        </div>
       </header>
       <main>
-        <section class="intro">
+        <!-- <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
             <p>На данной странице показан пример модальных окон.</p>
@@ -29,7 +61,7 @@
             <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
             <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
           </div>
-        </section>
+        </section> -->
       </main>
       <footer>
         <div class="container"></div>
