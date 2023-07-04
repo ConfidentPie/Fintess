@@ -29,11 +29,9 @@ $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0
 $button-buy-gradient:               linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
 $border-gradient:                   linear-gradient(148deg, $color-crimson 0%, $color-smalt 100%);
 $features-gradient:                 linear-gradient(142deg, $color-crimson 0%, $color-cobalt 75%);
-$hero-gradient-desktop:             conic-gradient(from 155deg at 20.70% 35.74%, $color-dark-cerulian 32deg, $color-venetian-red 313deg);
+$hero-gradient-desktop:             conic-gradient(from 155deg at 20.7% 35.74%, $color-dark-cerulian 32deg, $color-venetian-red 313deg);
 $hero-gradient-mobile:              conic-gradient(from 167deg at 35.31% 34.22%, $color-dark-cerulian 32deg, $color-venetian-red 313deg);
-$about-cover-mask:                rgba(20, 54, 122, 0.50);
-
-
+$about-cover-mask:                rgba(20, 54, 122, 0.5);
 
 // Typography
 // ---------------------------------
