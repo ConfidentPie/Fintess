@@ -1,0 +1,16 @@
+.navigation__list {
+  margin:0 auto;
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.navigation__item {
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+}
+
+.navigation__link {
+  color: $color-default-white;
+}

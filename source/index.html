@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Акселератор. Проект №1. Сайт центра SuperGym - самого большого фитнес центра за Уралом ">
     <title>Фитнесс центр SuperGym в Омске</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -17,22 +17,100 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+              <div class="header__nav">
+                <a class="header__logo" href="index.html">
+                  <img src="./img/logo.svg" width="122" height="44" alt="Логотип Supergym.">
+                </a>
+                <div class="header__contacts">
+                  <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+                </div>
+              </div>
+              <div class="header__hero">
+                <div class="header__hero-wrapper">
+                  <div class="header__hero-title">
+                    <p>Омск</p>
+                    <h1>Фитнес центр</h1>
+                  </div>
+                  <ul class="header__hero-list">
+                    <li>Тренажёрный зал</li>
+                    <li>Групповые занятия</li>
+                    <li>Кардио-зона</li>
+                  </ul>
+                  <a class="button" href="#membership">Купить абонемент</a>
+                </div>
+                <div class="header__image">
+                 <picture>
+                  <source type="image/webp" media="(max-width:1199px)" srcset="./img/hero/hero-desktop@1x.webp, ./img/hero/hero-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(max-width:767px)" srcset="./img/hero/hero-tablet@1x.webp, ./img/hero/hero-tablet@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="./img/hero/hero-tablet@1x.jpg 1x, ./img/hero/hero-tablet@2x.jpg 2x">
+                  <img src="./img/hero/hero-desktop@1x.jpg" srcset="./img/hero/hero-desktop@2x.jpg" width="500" height="556" alt="Тренер-супермен.">
+                 </picture>
+                </div>
+              </div>
+          </div>
+        </div>
       </header>
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
-        </section>
+
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__container">
+            <div class="footer__logo">
+              <a class="header__logo" href="index.html">
+                <img src="./img/logo.svg" width="88" height="32" alt="Логотип Supergym.">
+              </a>
+            </div>
+            <div class="footer__navigation navigation">
+              <h2 class="visually-hidden">Список разделов сайта</h2>
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Услуги</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Абонементы</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Акции</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Тренеры</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Расписание</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank" aria-label="Мы во Вконтакте.">
+                    <svg class="social__icon" width="25" height="25">
+                      <use xlink:href="img/sprite/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademy" target="_blank" aria-label="Мы в Одноклассниках.">
+                    <svg class="social__icon" width="25" height="25">
+                      <use xlink:href="img/sprite/sprite.svg#ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--reddit" href="https://t.me/htmlacademy " target="_blank" aria-label="Мы в Reddit.">
+                    <svg class="social__icon" width="25" height="25">
+                      <use xlink:href="img/sprite/sprite.svg#reddit"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
 

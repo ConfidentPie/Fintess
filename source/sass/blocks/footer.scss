@@ -1,0 +1,13 @@
+.footer {
+  background-color: $color-black-russian;
+}
+
+.footer__wrapper {
+  padding: 49px 103px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
