@@ -1,0 +1,15 @@
+.social__list {
+  display: flex;
+  list-style: none;
+  gap: 11px;
+}
+
+.social__link {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-default-white;
+
+
+}

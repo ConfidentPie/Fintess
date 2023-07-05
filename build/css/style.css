@@ -1319,6 +1319,61 @@ button,
           justify-content: center;
 }
 
+.footer {
+  background-color: #030a1a;
+}
+
+.footer__wrapper {
+  padding: 49px 103px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 11px;
+}
+
+.social__link {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.navigation__list {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.navigation__item {
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+}
+
+.navigation__link {
+  color: #ffffff;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
