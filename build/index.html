@@ -28,24 +28,25 @@
                   <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
                 </div>
               </div>
-              <div class="header__hero hero">
-                <div class="hero__wrapper">
-                  <div class="hero__title">
+              <div class="header__hero">
+                <div class="header__hero-wrapper">
+                  <div class="header__hero-title">
                     <p>Омск</p>
                     <h1>Фитнес центр</h1>
                   </div>
-                  <ul class="hero__list">
-                    <li class="hero__list-item">Тренажёрный зал</li>
-                    <li class="hero__list-item">Групповые занятия</li>
-                    <li class="hero__list-item">Кардио-зона</li>
+                  <ul class="header__hero-list">
+                    <li>Тренажёрный зал</li>
+                    <li>Групповые занятия</li>
+                    <li>Кардио-зона</li>
                   </ul>
                   <a class="button" href="#membership">Купить абонемент</a>
                 </div>
-                <div class="hero__image-wrapper">
+                <div class="header__image">
                  <picture>
-                  <source type="image/webp" media="(max-width:1199px)" srcset="./img/hero/hero-desktop@1x.webp, ./img/hero/hero-desktop@2x.webp 2x" width="500" height="556">
-                  <source type="image/webp" media="(max-width:767px)" srcset="./img/hero/hero-tablet@1x.webp, ./img/hero/hero-tablet@2x.webp 2x" width="324" height="390">
-                  <img class="hero__image" src="./img/hero/hero-desktop@1x.jpg" srcset="./img/hero/hero-desktop@2x.jpg" width="500" height="556" alt="Тренер-супермен.">
+                  <source type="image/webp" media="(max-width:1199px)" srcset="./img/hero/hero-desktop@1x.webp, ./img/hero/hero-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(max-width:767px)" srcset="./img/hero/hero-tablet@1x.webp, ./img/hero/hero-tablet@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="./img/hero/hero-tablet@1x.jpg 1x, ./img/hero/hero-tablet@2x.jpg 2x">
+                  <img src="./img/hero/hero-desktop@1x.jpg" srcset="./img/hero/hero-desktop@2x.jpg" width="500" height="556" alt="Тренер-супермен.">
                  </picture>
                 </div>
               </div>
@@ -64,7 +65,13 @@
         </section> -->
       </main>
       <footer>
-        <div class="container"></div>
+        <div class="container">
+          <div class="footer__wrapper">
+            <a class="header__logo" href="index.html">
+              <img src="./img/logo.svg" width="122" height="44" alt="Логотип Supergym.">
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
 
