@@ -1296,6 +1296,7 @@ button,
 }
 
 .header__hero-title p {
+  font-family: "Alumni Sans", "Arial", sans-serif;
   margin: 0 51px 15px 0;
   font-size: 48px;
   letter-spacing: 3%;
