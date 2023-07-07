@@ -1573,7 +1573,7 @@ button,
 
 .about__text-block {
   max-width: 355px;
-  padding-top: 39px;
+  padding: 39px 0 0 60px;
 }
 
 .about__title {
@@ -1589,64 +1589,14 @@ button,
   font-size: 18px;
 }
 
-.about__description-wrapper {
-  font-weight: 300;
-}
-@media (max-width: 1279px) {
-  .about__description-wrapper {
-    max-width: 502px;
-  }
-}
-
 .about__description--primary {
   margin-top: 0;
 }
 
 @media (max-width: 1279px) {
   .about__description--secondary {
-    display: none;
+    diplay: none;
   }
-}
-
-.about__media-block {
-  width: 100%;
-  max-width: 660px;
-  min-height: 511px;
-  position: relative;
-}
-
-.about__video {
-  position: absolute;
-  top: 288px;
-  left: -63px;
-  width: 364px;
-  height: 228px;
-  background-color: #103aae;
-}
-
-.about__play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 72px;
-  height: 72px;
-  border: none;
-  border-radius: 50%;
-  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-  cursor: pointer;
-}
-.about__play-button::before {
-  content: "";
-  position: absolute;
-  top: 36%;
-  left: 38%;
-  width: 17px;
-  height: 17px;
-  background-image: url("./../img/svg/play.svg");
-  background-repeat: no-repeat;
 }
 
 /* @mixin hover-focus {
