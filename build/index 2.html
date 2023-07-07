@@ -60,8 +60,10 @@
               <div class="about__text-block">
                 <h3 class="about__title">Тренажерный зал</h3>
                 <p class="about__feature">Просторный зал площадью 900&nbsp;кв/м</p>
-                <p class="about__description about__description--primary">Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-                <div class="about__description about__description--secondary">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</div>
+                <div class="about__description-wrapper">
+                  <p class="about__description about__description--primary">Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+                  <p class="about__description about__description--secondary">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+                </div>
               </div>
               <div class="about__media-block">
                 <div class="about__photo">
@@ -84,7 +86,7 @@
                     <source media="(min-width: vp-767)" srcset="./img/about/cover-mobile@1x.jpg 1x, ./img/about/cover-mobile@2x.jpg 2x">
                     <img src="./img/about/cover-desktop@1x.jpg" srcset="./img/about/cover-desktop@2x.jpg 2x" width="364" height="228" alt="Обложка промо-видео.">
                   </picture>
-                  <button type="button" aria-label="Воспроизвести видео."></button>
+                  <button class="about__play-button" type="button" aria-label="Воспроизвести видео."></button>
                   <video width="320" height="167" id="promo-video">
                     <source src="https://www.youtube.com/watch?v=9TZXsZItgdw" type="video/mp4">
                   </video>
@@ -95,69 +97,83 @@
         </section>
         <section class="membership component-demo" data-tabs="element" id="membership">
           <div class="container">
-            <h2 class="membership__title">Абонементы</h2>
             <div class="membership__wrapper">
+              <h2 class="membership__title">Абонементы</h2>
               <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
                 <div class="tabs__controls" data-tabs="controls">
                   <button class="tabs__control btn" type="button" data-tabs="control">1 месяц</button>
                   <button class="tabs__control btn" type="button" data-tabs="control">6 месяцев</button>
                   <button class="tabs__control btn" type="button" data-tabs="control">12 месяцев</button>
                 </div>
-                <div class="tabs__content" data-tabs="content">
-                  <div class="tabs__element" data-tabs="element">
-                    <div class="tabs__item">
-                      <p class="tabs__title">С тренером</p>
+                <div class="membershio__lists tabs__content" data-tabs="content">
+                  <div class="membership__list tabs__element" data-tabs="element">
+                    <div class="membership__item tabs__item">
+                      <h3 class="tabs__title">С тренером</h3>
                       <p class="tabs__description">12 занятий</p>
-                      <p class="tabs__price">5000 &#8381;</p>
+                      <div class="membership__price">
+                        <p data-price="5000" class="tabs__price">5000 &#8381;</p>
+                      </div>
                       <a class="btn" href="#">Купить абонемент</a>
                     </div>
-                    <div class="tabs__item">
-                      <p class="tabs__title">Дневной</p>
+                    <div class="membership__item tabs__item">
+                      <h3 class="tabs__title">Дневной</h3>
                       <p class="tabs__description">с 8:00 до 17:00</p>
-                      <p class="tabs__price">1700 &#8381;</p>
+                      <div class="membership__price">
+                        <p data-price="1700" class="tabs__price">1700 &#8381;</p>
+                      </div>
                       <a class="btn" href="#">Купить абонемент</a>
                     </div>
-                    <div class="tabs__item">
-                      <p class="tabs__title">Полный день</p>
+                    <div class="membership__item tabs__item">
+                      <h3 class="tabs__title">Полный день</h3>
                       <p class="tabs__description">с 8:00 до 22:00</p>
-                      <p class="tabs__price">2700 &#8381;</p>
+                      <div class="membership__price">
+                        <p data-price="2700" class="tabs__price">2700 &#8381;</p>
+                      </div>
                       <a class="btn" href="#">Купить абонемент</a>
                     </div>
                   </div>
-                  <div class="tabs__element" data-tabs="element">
-                    <div class="tabs__item">
-                      <p class="tabs__title">С тренером</p>
+                  <div class="membership__list tabs__element" data-tabs="element">
+                    <div class="membership__item tabs__item">
+                      <h3 class="tabs__title">С тренером</h3>
                       <p class="tabs__description">72 занятия</p>
-                      <p class="tabs__price">27000 &#8381;</p>
+                      <div class="membership__price">
+                        <p data-price="27000" class="tabs__price">27000 &#8381;</p>
+                      </div>
                       <a class="btn" href="#">Купить абонемент</a>
                     </div>
-                    <div class="tabs__item">
-                      <p class="tabs__title">Дневной</p>
+                    <div class="membership__item tabs__item">
+                      <h3 class="tabs__title">Дневной</h3>
                       <p class="tabs__description">с 8:00 до 17:00</p>
-                      <p class="tabs__price">9500 &#8381;</p>
+                      <div class="membership__price">
+                        <p data-price="9500" class="tabs__price">9500 &#8381;</p>
+                      </div>
                       <a class="btn" href="#">Купить абонемент</a>
                     </div>
-                    <div class="tabs__item">
-                      <p class="tabs__title">Полный день</p>
+                    <div class="membership__item tabs__item">
+                      <h3 class="tabs__title">Полный день</h3>
                       <p class="tabs__description">с 8:00 до 22:00</p>
-                      <p class="tabs__price">15500 &#8381;</p>
+                      <div class="membership__price">
+                        <p data-price="15500" class="tabs__price">15500 &#8381;</p>
+                      </div>
                       <a class="btn" href="#">Купить абонемент</a>
                     </div>
                   </div>
-                  <div class="tabs__element" data-tabs="element">
-                    <div class="tabs__item">
-                      <p class="tabs__title">С тренером</p>
+                  <div class="membership__list tabs__element" data-tabs="element">
+                    <div class="membership__item tabs__item">
+                      <h3 class="tabs__title">С тренером</h3>
                       <p class="tabs__description">144 занятия</p>
-                      <p class="tabs__price">50000 &#8381;</p>
+                      <div class="membership__price">
+                        <p data-price="50000" class="tabs__price">50000 &#8381;</p>
+                      </div>
                       <a class="btn" href="#">Купить абонемент</a>
                     </div>
-                    <div class="tabs__item">
+                    <div class="membership__item tabs__item">
                       <p class="tabs__title">Дневной</p>
                       <p class="tabs__description">с 8:00 до 17:00</p>
                       <p class="tabs__price">18000 &#8381;</p>
                       <a class="btn" href="#">Купить абонемент</a>
                     </div>
-                    <div class="tabs__item">
+                    <div class="membership__item tabs__item">
                       <p class="tabs__title">Полный день</p>
                       <p class="tabs__description">с 8:00 до 22:00</p>
                       <p class="tabs__price">30000 &#8381;</p>
@@ -670,7 +686,7 @@
                     </div>
                     <div class="reviews__content">
                       <p class="reviews__author">Ирина Седова</p>
-                      <p class="reviews__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                      <p class="reviews__text">&laquo;Хожу в&nbsp;SuperGym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                     </div>
                   </div>
                 </div>
@@ -687,7 +703,7 @@
                     </div>
                     <div class="reviews__content">
                       <p class="reviews__author">Ирина Седова</p>
-                      <p class="reviews__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                      <p class="reviews__text">&laquo;Хожу в&nbsp;SuperGym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                     </div>
                   </div>
                 </div>

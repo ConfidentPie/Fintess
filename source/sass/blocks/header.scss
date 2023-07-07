@@ -20,6 +20,24 @@
   padding-top: 30px;
 }
 
+.header__logo {
+  min-width: 122px;
+
+    @include hover {
+      opacity: 70%;
+    }
+
+  @include vp-1279 {
+      max-width: 122px;
+      min-width: 82px;
+    }
+
+    @include vp-767 {
+      max-width: 82px;
+      min-width: 69px;
+    }
+}
+
 .header__phone {
   font-family: $ff-alumni-sans;
   font-weight: 600;
@@ -27,7 +45,20 @@
   line-height: 20px;
   letter-spacing: 0.78px;
   color: $color-default-white;
+
+  @include vp-1279 {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2%;
+  }
+
+  @include vp-767 {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2%;
+  }
 }
+
 
 .header__hero {
   display: grid;
