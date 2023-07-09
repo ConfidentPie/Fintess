@@ -5,12 +5,17 @@
   display: flex;
   justify-content: center;
 
-  @include vp-1279 {
+  @include vp-1199 {
     padding: 100px 0 56px 0;
     max-width: 678px;
   }
 
+  @include vp-1023 {
+    padding: 100px 0 50px 0;
+  }
+
   @include vp-767 {
+    flex-direction: column;
     padding: 70px 0 35px 0;
     max-width: 290px;
   }
@@ -22,9 +27,20 @@
   background-color: #ed0233;
   color: $color-default-white;
 
-  @include vp-1279 {
+  @include vp-1199 {
     max-width: 292px;
     padding: 51px 45px;
+  }
+
+  @include vp-1023 {
+    padding: 51px 45px 50px 45px;
+    width: 43%;
+  }
+
+  @include vp-767 {
+    padding: 50px 43px 51px 43px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -35,7 +51,7 @@
   margin: 0 0 10px 0;
   max-width: 343px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     gap: 4px 35px;
     margin: 0 0 1px 0;
     max-width: 292px;
@@ -57,12 +73,12 @@
   font-weight: 600;
   line-height: 96%;
 
-  @include vp-1279 {
+  @include vp-1199 {
     font-size: 72px;
-    line-height: 68.72px;
+    line-height: 68px;
   }
 
-  @include vp-767 {
+  @include vp-1023 {
     margin: 0 0 0 7px;
     max-width: 120px;
     font-size: 48px;
@@ -74,8 +90,14 @@
 .event__time {
   margin: -5px 0 0 0;
 
-  @include vp-1279 {
+  @include vp-1199 {
     margin: -4px 0 0 0;
+  }
+
+  @include vp-1023 {
+    justify-self: end;
+    margin: -4px 2px 0 0;
+    max-width: 56px;
   }
 
   @include vp-767 {
@@ -102,7 +124,7 @@
     background-color: $color-default-white;
   }
 
-  @include vp-1279 {
+  @include vp-1199 {
     font-size: 16px;
     line-height: 24px;
 
@@ -124,17 +146,18 @@
 
 .event__date dd,
 .event__time dd {
+  display: flex;
   margin: 0;
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     font-size: 35px;
     line-height: 50px;
   }
 
-  @include vp-767 {
+  @include vp-1023 {
     font-size: 24px;
     line-height: 35px;
   }
@@ -148,26 +171,43 @@
   font-size: 14px;
   line-height: 17px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     font-size: 12px;
     line-height: 15px;
   }
 
-  @include vp-767 {
+  @include vp-1023 {
     margin: 5px 0 0 4px;
     font-size: 10px;
     line-height: 12px;
   }
 }
 
+.event__date dt,
+.event__time dt {
+  &::after {
+    width: 70%;
+  }
+
+  @include vp-1023 {
+    &::after {
+      width: 75%;
+    }
+  }
+}
+
+
 .event__text {
-  margin: 0;
-  margin-bottom: 43px;
+  margin: 0 0 45px 0;
+  padding: 0;
   font-size: 18px;
   line-height: 150%;
 
-  @include vp-1279 {
-    font-size: 16px;
+  @include vp-1199 {
+    margin: 0 0 31px 0;
+    padding: 100px 0 60px 0;
+    font-size: 12px;
+    justify-content: center;
   }
 
   @include vp-767 {
@@ -180,7 +220,8 @@
   max-width: 343px;
   padding: 25px 10px 24px 10px;
 
-  @include vp-1279 {
+  @include vp-1023 {
+    margin: 30px 0 0 0;
     padding: 13px 10px 12px 10px;
     border: 2px solid $color-default-white;
     font-size: 10px;
@@ -194,7 +235,27 @@
   }
 }
 
-  .promo__image-wrapper img {
+.event__image-wrapper {
+  width: 100%;
+  min-height: 500px;
+  background-color: $color-dark-cerulian;
+
+  @include vp-1199 {
+    min-height: 451px;
+  }
+
+  @include vp-1023 {
+    max-width: 400px;
+    min-height: 292.7px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.promo__image-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;

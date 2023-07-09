@@ -43,7 +43,7 @@
                 </div>
                 <div class="header__image">
                 <picture>
-                  <source type="image/webp" media="(max-width:1279px)" srcset="./img/hero/hero-desktop@1x.webp, ./img/hero/hero-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(max-width:1199px)" srcset="./img/hero/hero-desktop@1x.webp, ./img/hero/hero-desktop@2x.webp 2x">
                   <source type="image/webp" media="(max-width:767px)" srcset="./img/hero/hero-tablet@1x.webp, ./img/hero/hero-tablet@2x.webp 2x">
                   <source media="(min-width: $vp-768)" srcset="./img/hero/hero-tablet@1x.jpg 1x, ./img/hero/hero-tablet@2x.jpg 2x">
                   <img src="./img/hero/hero-desktop@1x.jpg" srcset="./img/hero/hero-desktop@2x.jpg" width="500" height="556" alt="Тренер-супермен.">
@@ -68,7 +68,7 @@
               <div class="about__media-block">
                 <div class="about__photo">
                   <picture>
-                    <source type="image/webp" media="(min-width: $vp-1024)" srcset="img/about/gym-desktop@1x.webp 1x, img/about/gym-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1199px)" srcset="img/about/gym-desktop@1x.webp 1x, img/about/gym-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: $vp-768)" srcset="./img/about/gym-tablet@1x.webp 1x, ./img/about/gym-tablet@2x.webp 2x">
                     <source type="image/webp" media="(max-width: vp-767px)" srcset="./img/about/gym-mobile@1x.webp 1x, ./img/about/gym-mobile@2x.webp 2x">
                     <source media="(min-width: $vp-768)" srcset="./img/about/gym-tablet@1x.jpg 1x, ./img/about/gym-tablet@2x.jpg 2x">
@@ -78,115 +78,119 @@
                 </div>
                 <div class="about__video">
                   <picture>
-                    <source type="imge/webp" media="(min-width: $vp-1024)" srcset="./img/about/cover-desktop@1x.wepb 1x, ./img/about/cover-desktop@2x.wepb 2x">
+                    <source type="imge/webp" media="(min-width: 1199px)" srcset="./img/about/cover-desktop@1x.wepb 1x, ./img/about/cover-desktop@2x.wepb 2x">
                     <source type="imge/webp" media="(min-width: $vp-768)" srcset="./img/about/cover-tablet@1x.wepb 1x, ./img/about/cover-tablet@2x.wepb 2x">
-                    <source type="imge/webp" media="(min-width: vp-767)" srcset="./img/about/cover-mobile@1x.wepb 1x, ./img/about/cover-mobile@2x.wepb 2x">
+                    <source type="imge/webp" media="(max-width: vp-767)" srcset="./img/about/cover-mobile@1x.wepb 1x, ./img/about/cover-mobile@2x.wepb 2x">
 
                     <source media="(min-width: $vp-768)" srcset="./img/about/cover-tablet@1x.jpg 1x, ./img/about/cover-tablet@2x.jpg 2x">
-                    <source media="(min-width: vp-767)" srcset="./img/about/cover-mobile@1x.jpg 1x, ./img/about/cover-mobile@2x.jpg 2x">
+                    <source media="(max-width: vp-767)" srcset="./img/about/cover-mobile@1x.jpg 1x, ./img/about/cover-mobile@2x.jpg 2x">
                     <img src="./img/about/cover-desktop@1x.jpg" srcset="./img/about/cover-desktop@2x.jpg 2x" width="364" height="228" alt="Обложка промо-видео.">
                   </picture>
                   <button class="about__play-button" type="button" aria-label="Воспроизвести видео."></button>
-                  <video width="320" height="167" id="promo-video">
-                    <source src="https://www.youtube.com/watch?v=9TZXsZItgdw" type="video/mp4">
-                  </video>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="membership component-demo" data-tabs="element" id="membership">
+        <section class="membership" id="membership">
           <div class="container">
-            <div class="membership__wrapper">
+            <div class="membership__wrapper" data-tabs="parent">
               <h2 class="membership__title">Абонементы</h2>
-              <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
-                <div class="membership__controls tabs__controls" data-tabs="controls">
+                <div class="membership__controls" data-tabs="controls">
                   <button class="tabs__control" type="button" data-tabs="control">1 месяц</button>
                   <button class="tabs__control" type="button" data-tabs="control">6 месяцев</button>
                   <button class="tabs__control" type="button" data-tabs="control">12 месяцев</button>
                 </div>
-                <div class="membership__lists tabs__content" data-tabs="content">
-                  <div class="membership__list tabs__element" data-tabs="element">
-                    <div class="membership__item tabs__item">
+                <div class="membership__lists" data-tabs="content">
+                  <div class="membership__list" data-tabs="element">
+                    <div class="membership__item" tabindex="0">
                       <h3 class="tabs__title">С тренером</h3>
                       <p class="tabs__description">12 занятий</p>
                       <div class="membership__price">
                         <p data-price="5000" class="tabs__price">5000 &#8381;</p>
                       </div>
-                      <a class="btn" href="#">Купить абонемент</a>
+                      <a class="btn" href="memberships.html">Купить абонемент</a>
                     </div>
-                    <div class="membership__item tabs__item">
+                    <div class="membership__item" tabindex="0">
                       <h3 class="tabs__title">Дневной</h3>
                       <p class="tabs__description">с 8:00 до 17:00</p>
                       <div class="membership__price">
                         <p data-price="1700" class="tabs__price">1700 &#8381;</p>
                       </div>
-                      <a class="btn" href="#">Купить абонемент</a>
+                      <a class="btn" href="memberships.html">Купить абонемент</a>
                     </div>
-                    <div class="membership__item tabs__item">
+                    <div class="membership__item" tabindex="0">
                       <h3 class="tabs__title">Полный день</h3>
                       <p class="tabs__description">с 8:00 до 22:00</p>
                       <div class="membership__price">
                         <p data-price="2700" class="tabs__price">2700 &#8381;</p>
                       </div>
-                      <a class="btn" href="#">Купить абонемент</a>
+                      <a class="btn" href="memberships.html">Купить абонемент</a>
                     </div>
                   </div>
-                  <div class="membership__list tabs__element" data-tabs="element">
-                    <div class="membership__item tabs__item">
+                  <div class="membership__list" data-tabs="element">
+                    <div class="membership__item" tabindex="0">
                       <h3 class="tabs__title">С тренером</h3>
                       <p class="tabs__description">72 занятия</p>
                       <div class="membership__price">
                         <p data-price="27000" class="tabs__price">27000 &#8381;</p>
                       </div>
-                      <a class="btn" href="#">Купить абонемент</a>
+                      <a class="btn" href="memberships.html">Купить абонемент</a>
                     </div>
-                    <div class="membership__item tabs__item">
+                    <div class="membership__item" tabindex="0">
                       <h3 class="tabs__title">Дневной</h3>
                       <p class="tabs__description">с 8:00 до 17:00</p>
                       <div class="membership__price">
                         <p data-price="9500" class="tabs__price">9500 &#8381;</p>
                       </div>
-                      <a class="btn" href="#">Купить абонемент</a>
+                      <a class="btn" href="memberships.html">Купить абонемент</a>
                     </div>
-                    <div class="membership__item tabs__item">
+                    <div class="membership__item" tabindex="0">
                       <h3 class="tabs__title">Полный день</h3>
                       <p class="tabs__description">с 8:00 до 22:00</p>
                       <div class="membership__price">
                         <p data-price="15500" class="tabs__price">15500 &#8381;</p>
                       </div>
-                      <a class="btn" href="#">Купить абонемент</a>
+                      <a class="btn" href="memberships.html">Купить абонемент</a>
                     </div>
                   </div>
-                  <div class="membership__list tabs__element" data-tabs="element">
-                    <div class="membership__item tabs__item">
+                  <div class="membership__list" data-tabs="element">
+                    <div class="membership__item" tabindex="0">
                       <h3 class="tabs__title">С тренером</h3>
                       <p class="tabs__description">144 занятия</p>
                       <div class="membership__price">
                         <p data-price="50000" class="tabs__price">50000 &#8381;</p>
                       </div>
-                      <a class="btn" href="#">Купить абонемент</a>
+                      <a class="btn" href="memberships.html">Купить абонемент</a>
                     </div>
-                    <div class="membership__item tabs__item">
+                    <div class="membership__item" tabindex="0">
                       <h3 class="tabs__title">Дневной</h3>
                       <p class="tabs__description">с 8:00 до 17:00</p>
                       <div class="membership__price">
                         <p data-price="18000" class="tabs__price">18000 &#8381;</p>
                       </div>
-                      <a class="btn" href="#">Купить абонемент</a>
+                      <a class="btn" href="memberships.html">Купить абонемент</a>
                     </div>
-                    <div class="membership__item tabs__item">
+                    <div class="membership__item" tabindex="0">
                       <h3 class="tabs__title">Полный день</h3>
                       <p class="tabs__description">с 8:00 до 22:00</p>
                       <div class="membership__price">
                         <p data-price="30000" class="tabs__price">30000 &#8381;</p>
                       </div>
-                      <a class="btn" href="#">Купить абонемент</a>
+                      <a class="btn" href="memberships.html">Купить абонемент</a>
                     </div>
-                  </div>
                   </div>
                 </div>
               </div>
+          </div>
+          <div class="membership__background-wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/decor/membership-decor-tablet@1x.webp, ./img/decor/membership-decor-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/decor/membership-decor-desktop@1x.webp, ./img/decor/membership-decor-desktop@2x.webp 2x">
+              <source media="(max-width: 1199px)" srcset="./img/decor/membership-decor-tablet@1x.png, ./img/decor/membership-decor-tablet@2x.png 2x">
+              <img src="./img/decor/membership-decor-desktop@1x.png" srcset="./img/decor/membership-decor-desktop@2x.png 2x"
+                width="321" height="324" alt="Блины для штанги.">
+            </picture>
           </div>
         </section>
         <section class="event">
@@ -211,13 +215,13 @@
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
                     srcset="./img/promo/event-mobile@1x.webp, ./img/promo/event-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1279px)"
+                  <source type="image/webp" media="(max-width: 1023px)"
                     srcset="./img/promo/event-tablet@1x.webp, ./img/promo/event-tablet@2x.webp 2x">
                   <source type="image/webp"
                     srcset="./img/promo/event-desktop@1x.webp, ./img/promo/event-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)"
                     srcset="./img/promo/event-mobile@1x.jpg, ./img/promo/event-mobile@2x.jpg 2x">
-                  <source media="(max-width: 1279px)"
+                  <source media="(max-width: 1023px)"
                     srcset="./img/promo/event-tablet@1x.jpg, ./img/promo/event-tablet@2x.jpg 2x">
                   <img src="./img/promo/event-desktop@1x.jpg" srcset="./img/promo/event-desktop@2x.jpg 2x"
                     width="660" height="500"
