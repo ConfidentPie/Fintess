@@ -1,8 +1,9 @@
 import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
 import { Form } from './modules/form-validate/form';
 import { initVideoPlayer } from './modules/init-video-player';
 import { initTabs } from './modules/tabs/init-tabs';
+import { initSliderCoaches } from './modules/sliders/init-slider-coaches';
+import { getSlidesTabs } from './modules/sliders/get-slides-tabs';
 
 // ---------------------------------
 
@@ -23,6 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     initVideoPlayer();
     initTabs();
+    getSlidesTabs();
+    initSliderCoaches();
   });
 });
 

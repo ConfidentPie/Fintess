@@ -51,7 +51,7 @@
   }
 }
 
-.promo__item-primary  {
+.promo__item-primary {
   max-width: 560px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -73,7 +73,7 @@
   display: flex;
   flex-direction: column;
   padding: 45px;
-  background-color: #ED0233;
+  background-color: #ed0233;
   color: $color-default-white;
 }
 
@@ -88,7 +88,7 @@
   margin: 0 0 35px 0;
   font-weight: 700;
   font-size: 70px;
-  line-height: 109,2px;
+  line-height: 109.2px;
 }
 
 .promo__item-description p {
@@ -140,7 +140,7 @@
     width: 100%;
     min-width: 290px;
     min-height: 299px;
-    }
+  }
 }
 
 .promo__item-image img {

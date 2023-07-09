@@ -51,11 +51,20 @@
 
 .about__video {
   position: absolute;
-    top: 288px;
-    left: -63px;
-    width: 364px;
-    height: 228px;
-    background-color: $color-egyptian-blue;
+  top: 288px;
+  left: -63px;
+  width: 364px;
+  height: 228px;
+  background-color: $color-egyptian-blue;
+}
+
+.about__video-player {
+  width: 100%;
+  height: 100%;
+
+  @include vp-767 {
+    aspect-ratio: 320/167;
+  }
 }
 
 .about__play-button {
