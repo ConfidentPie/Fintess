@@ -109,6 +109,7 @@
 
 .membership__controls .tabs__control.is-active {
   color: $color-sapphire;
+  opacity: 100%;
 
   &::before {
     transform: scale(1);

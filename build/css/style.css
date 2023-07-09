@@ -2166,6 +2166,7 @@ button,
 
 .membership__controls .tabs__control.is-active {
   color: #102654;
+  opacity: 100%;
 }
 .membership__controls .tabs__control.is-active::before {
   -webkit-transform: scale(1);
