@@ -22,15 +22,19 @@ $color-venetian-red:                #b80027;
 $color-dark-cerulian:               #003d85;
 $color-cobalt:                      #0041ca;
 $color-smalt:                       #00359f;
+$color-persian-blue:                #2e35ac;
+$color-grey:                        #787878;
+$color-light-slate-grey:            #74819c;
 
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $button-buy-gradient:               linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+$numbers-gradient:                   linear-gradient(142.51deg, #d10a42 0%, #0041ca 75%);
 $border-gradient:                   linear-gradient(148deg, $color-crimson 0%, $color-smalt 100%);
 $features-gradient:                 linear-gradient(142deg, $color-crimson 0%, $color-cobalt 75%);
 $hero-gradient-desktop:             conic-gradient(from 130deg at 16.03% 39.06%, $color-venetian-red -46deg, $color-dark-cerulian 32deg, $color-venetian-red 313deg, $color-dark-cerulian 392deg);
-$hero-gradient-mobile:              conic-gradient(from 167deg at 35.31% 34.22%, $color-dark-cerulian 32deg, $color-venetian-red 313deg);
+$hero-gradient-mobile:              conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 $about-cover-mask:                rgba(20, 54, 122, 0.5);
 
 // Typography
@@ -69,6 +73,7 @@ $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
+$vp-1200:                           1200px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;

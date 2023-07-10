@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  padding: 20px 10px 19px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-default-white;
+  border: 4px solid $color-default-white;
+  user-select: none;
+
+  @include hover {
+    box-shadow: 0 0 10px 1px $color-default-white;
+    text-shadow: 0 0 10px $color-default-white;
+  }
+
+  &:active {
+    opacity: 70%;
+  }
+
+  @include vp-767 {
+    padding: 20px 10px;
+  }
+}
