@@ -1,6 +1,6 @@
 const sliderCoaches = document.querySelector('.coaches__swiper');
-const buttonNext = document.querySelector('.swiper__button-next');
-const buttonPrev = document.querySelector('.swiper__button-prev');
+const buttonNext = document.querySelector('.coaches__button--next');
+const buttonPrev = document.querySelector('.coaches__button--prev');
 
 const initSliderCoaches = () => {
   if (sliderCoaches) {

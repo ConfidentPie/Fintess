@@ -2674,7 +2674,7 @@ button,
 .event__wrapper {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 120px 0 56px 0;
+  padding: 120px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3293,6 +3293,157 @@ button,
 @media (max-width: 767px) {
   .coaches__swiper {
     margin: 0 30px;
+  }
+}
+
+.coaches__item {
+  position: relative;
+  color: #ffffff;
+  background-color: #003d85;
+  overflow: hidden;
+}
+@media (max-width: 1199px) {
+  .coaches__item {
+    min-width: 268px;
+    min-height: 294px;
+    aspect-ratio: 268/294;
+  }
+}
+@media (max-width: 767px) {
+  .coaches__item {
+    min-width: 226px;
+    min-height: 274px;
+    aspect-ratio: 226/274;
+  }
+}
+
+.coaches__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.coaches__item h3 {
+  position: absolute;
+  bottom: 23px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 260px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .coaches__item h3 {
+    max-width: 100%;
+  }
+}
+
+.coaches__item:hover h3,
+.coaches__item:focus h3 {
+  display: none;
+}
+
+.coaches__information {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 55px 30px;
+  background-color: rgba(16, 38, 84, 0.89);
+  overflow-y: auto;
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+@media (max-width: 767px) {
+  .coaches__information {
+    padding: 45px 9px;
+  }
+}
+
+.coaches__item:hover .coaches__information,
+.coaches__item:focus .coaches__information {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.coaches__information h4 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.coaches__information p {
+  margin: 0 0 33px 0;
+  text-align: center;
+  color: #b6bdcc;
+}
+
+.coaches__information ul {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.coaches__button {
+  position: absolute;
+  top: 57%;
+  width: 16px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .coaches__button:hover:not(.focus-visible) {
+    opacity: 50%;
+  }
+}
+@media (max-width: 1199px) {
+  .coaches__button {
+    top: 55%;
+  }
+}
+@media (max-width: 767px) {
+  .coaches__button {
+    width: 11px;
+    height: 19px;
+  }
+}
+.coaches__button--next {
+  right: -40px;
+  background-image: url("./../../img/svg/next.svg");
+}
+@media (max-width: 1199px) {
+  .coaches__button--next {
+    right: 0;
+  }
+}
+.coaches__button--prev {
+  left: -40px;
+  background-image: url("./../../img/svg/prev.svg");
+}
+@media (max-width: 1199px) {
+  .coaches__button--prev {
+    left: 0;
   }
 }
 
@@ -3947,6 +4098,55 @@ button,
     grid-column: 1/3;
     line-height: 22.5px;
     text-align: center;
+  }
+}
+
+.reviews__button {
+  position: absolute;
+  top: 52%;
+  width: 16px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .reviews__button:hover:not(.focus-visible) {
+    opacity: 50%;
+  }
+}
+.reviews__button:disabled {
+  cursor: not-allowed;
+  opacity: 50%;
+}
+@media (max-width: 1199px) {
+  .reviews__button {
+    top: 55%;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__button {
+    width: 11px;
+    height: 19px;
+  }
+}
+.reviews__button--next {
+  right: -10px;
+  background-image: url("./../../img/svg/next.svg");
+}
+@media (max-width: 1199px) {
+  .reviews__button--next {
+    right: 0;
+  }
+}
+.reviews__button--prev {
+  left: -10px;
+  background-image: url("./../../img/svg/prev.svg");
+}
+@media (max-width: 1199px) {
+  .reviews__button--prev {
+    left: 0;
   }
 }
 
