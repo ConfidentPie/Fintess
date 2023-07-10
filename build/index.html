@@ -666,46 +666,39 @@
         </section> -->
         <section class="reviews">
           <div class="container">
-            <div class="swipper">
-              <div class="swipper__wrapper">
-                <div class="swipper-slide">
-                  <div class="reviews__wrapper">
-                    <div class="reviews__avatar">
-                      <picture>
-                        <source type="image/webp" media="(max-width: $vp-375)" srcset="./img/reviews/avatar-mobile@1x.webp, ./img/reviews/avatar-mobile@2x.webp 2x">
-                        <source type="image/webp" srcset="./img/reviews/avatar-desktop@1x.webp, ./img/reviews/avatar-desktop@2x.webp 2x">
-
-                        <source type="image/webp" media="(max-width: $vp-375)" srcset="./img/reviews/avatar-mobile@1x.jpg, ./img/reviews/avatar-mobile@2x.jpg 2x">
-                        <img src="./img/reviews/avatar-desktop@1x.jpg" srcset="./img/reviews/avatar-desktop@2x.jpg 2x" width="80" height="80" alt="Авата пользователя.">
-                      </picture>
-                    </div>
-                    <div class="reviews__content">
-                      <p class="reviews__author">Ирина Седова</p>
-                      <p class="reviews__text">&laquo;Хожу в&nbsp;SuperGym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
-                    </div>
-                  </div>
+              <div class="reviews__wrapper">
+                <h2 class="reviews__title">Отзывы</h2>
+                <div class="reviews__swiper swiper">
+                  <ul class="reviews__list swiper-wrapper">
+                    <li class="reviews__item swiper-slide">
+                        <div class="reviews__avatar">
+                          <picture>
+                            <source type="image/webp" media="(max-width: $vp-375)" srcset="./img/reviews/avatar-mobile@1x.webp, ./img/reviews/avatar-mobile@2x.webp 2x">
+                            <source type="image/webp" srcset="./img/reviews/avatar-desktop@1x.webp, ./img/reviews/avatar-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(max-width: $vp-375)" srcset="./img/reviews/avatar-mobile@1x.jpg, ./img/reviews/avatar-mobile@2x.jpg 2x">
+                            <img src="./img/reviews/avatar-desktop@1x.jpg" srcset="./img/reviews/avatar-desktop@2x.jpg 2x" width="80" height="80" alt="Авата пользователя.">
+                          </picture>
+                        </div>
+                        <p class="reviews__author">Ирина Седова</p>
+                        <p class="reviews__text">&laquo;Хожу в&nbsp;SuperGym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                    </li>
+                    <li class="reviews__item swiper-slide">
+                      <div class="reviews__avatar">
+                        <picture>
+                          <source type="image/webp" media="(max-width: $vp-375)" srcset="./img/reviews/avatar-mobile@1x.webp, ./img/reviews/avatar-mobile@2x.webp 2x">
+                          <source type="image/webp" srcset="./img/reviews/avatar-desktop@1x.webp, ./img/reviews/avatar-desktop@2x.webp 2x">
+                          <source type="image/webp" media="(max-width: $vp-375)" srcset="./img/reviews/avatar-mobile@1x.jpg, ./img/reviews/avatar-mobile@2x.jpg 2x">
+                          <img src="./img/reviews/avatar-desktop@1x.jpg" srcset="./img/reviews/avatar-desktop@2x.jpg 2x" width="80" height="80" alt="Авата пользователя.">
+                        </picture>
+                      </div>
+                        <p class="reviews__author">Ирина Седова</p>
+                        <p class="reviews__text">&laquo;Хожу в&nbsp;SuperGym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                    </li>
+                  </ul>
                 </div>
-                <div class="swipper-slide">
-                  <div class="reviews__wrapper">
-                    <div class="reviews__avatar">
-                      <picture>
-                        <source type="image/webp" media="(max-width: $vp-375)" srcset="./img/reviews/avatar-mobile@1x.webp, ./img/reviews/avatar-mobile@2x.webp 2x">
-                        <source type="image/webp" srcset="./img/reviews/avatar-desktop@1x.webp, ./img/reviews/avatar-desktop@2x.webp 2x">
-
-                        <source type="image/webp" media="(max-width: $vp-375)" srcset="./img/reviews/avatar-mobile@1x.jpg, ./img/reviews/avatar-mobile@2x.jpg 2x">
-                        <img src="./img/reviews/avatar-desktop@1x.jpg" srcset="./img/reviews/avatar-desktop@2x.jpg 2x" width="80" height="80" alt="Авата пользователя.">
-                      </picture>
-                    </div>
-                    <div class="reviews__content">
-                      <p class="reviews__author">Ирина Седова</p>
-                      <p class="reviews__text">&laquo;Хожу в&nbsp;SuperGym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
-                    </div>
-                  </div>
-                </div>
+                <button class="reviews__button reviews__button--prev" type="button" aria-label="Назад."></button>
+                <button class="reviews__button reviews__button--next" type="button" aria-label="Вперед."></button>
               </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
           </div>
         </section>
         <div class="blocks-wrapper">
