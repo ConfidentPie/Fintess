@@ -235,9 +235,83 @@
           <div class="container">
             <div class="coaches__wrapper">
               <h2 class="coaches__title">Тренеры</h2>
-              <button class="swiper__button-prev" type="button" aria-label="Назад."></button>
+              <button class="coaches__button coaches__button--prev" type="button" aria-label="Назад."></button>
               <div class="coaches__swiper swiper">
                 <ul class="coaches__list swiper-wrapper">
+                  <li class="coaches__item swiper-slide">
+                      <h3>Анна Павлова</h3>
+                      <picture>
+                        <source type="image/webp" media="(max-width: $vp-1200)" srcset="./img/coaches/coach1-tablet@1x.webp, ./img/coaches/coach1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="./img/coaches/coach1-desktop@1x.webp, ./img/coaches/coach1-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: $vp-1200)" srcset="./img/coaches/coach1-tablet@1x.jpg, ./img/coaches/coach1-tablet@2x.jpg 2x">
+                        <img src="./img/coaches/coach1-desktop@1x.jpg" srcset="./img/coaches/coach1-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера 1.">
+                      </picture>
+                      <div class="coaches__information">
+                        <h4>Анна Павлова</h4>
+                        <p>Stretching</p>
+                        <ul>
+                          <li>Дипломированный специалист РГУФКСМиТ</li>
+                          <li>Мастер спорта России по&nbsp;художественной гимнастике</li>
+                          <li>Опыт — 4 года</li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="coaches__item swiper-slide">
+                      <h3>Алексей Лавров</h3>
+                      <picture>
+                        <source type="image/webp" media="(max-width: $vp-1200)" srcset="./img/coaches/coach2-tablet@1x.webp, ./img/coaches/coach2-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="./img/coaches/coach2-desktop@1x.webp, ./img/coaches/coach2-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: $vp-1200)" srcset="./img/coaches/coach2-tablet@1x.jpg, ./img/coaches/coach2-tablet@2x.jpg 2x">
+                        <img src="./img/coaches/coach2-desktop@1x.jpg" srcset="./img/coaches/coach2-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера 2.">
+                      </picture>
+                      <div class="coaches__information">
+                        <h4>Алексей Лавров</h4>
+                        <p>Функциональные тренировки</p>
+                        <ul>
+                          <li>Мастер-тренер Coach Club</li>
+                          <li>Инструктор проекта «Гонка героев»</li>
+                          <li>Опыт — 5 лет</li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="coaches__item swiper-slide">
+                      <h3>Александр Пашков</h3>
+                      <picture>
+                        <source type="image/webp" media="(max-width: $vp-768)" srcset="./img/coaches/coach3-tablet@1x.webp, ./img/coaches/coach3-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="./img/coaches/coach3-desktop@1x.webp, ./img/coaches/coach3-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: $vp-768)" srcset="./img/coaches/coach3-tablet@1x.jpg, ./img/coaches/coach3-tablet@2x.jpg 2x">
+                        <img src="./img/coaches/coach3-desktop@1x.jpg" srcset="./img/coaches/coach3-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера 3.">
+                      </picture>
+                      <div class="coaches__information">
+                        <h4>Александр Пашков</h4>
+                        <p>Crossfit</p>
+                        <ul>
+                          <li>Certified Level 3 Trainer</li>
+                          <li>Победитель чемпионата России по&nbsp;CrossFit</li>
+                          <li>Опыт — 6 лет</li>
+                        </ul>
+                      </div>
+
+                  </li>
+                  <li class="coaches__item swiper-slide">
+
+                      <h3>Мария Кетова</h3>
+                      <picture>
+                        <source type="image/webp" media="(max-width: $vp-768)" srcset="./img/coaches/coach4-tablet@1x.webp, ./img/coaches/coach4-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="./img/coaches/coach4-desktop@1x.webp, ./img/coaches/coach4-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: $vp-768)" srcset="./img/coaches/coach4-tablet@1x.jpg, ./img/coaches/coach4-tablet@2x.jpg 2x">
+                        <img src="./img/coaches/coach4-desktop@1x.jpg" srcset="./img/coaches/coach4-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера 4.">
+                      </picture>
+                      <div class="coaches__information">
+                        <h4>Мария Кетова</h4>
+                        <p>TRX</p>
+                        <ul>
+                          <li>Сертифицированный тренер групповых программ "TRX STC, FTC"</li>
+                          <li>КМС по&nbsp;легкой атлетике</li>
+                          <li>Опыт — 4 года</li>
+                        </ul>
+                      </div>
+                  </li>
                   <li class="coaches__item swiper-slide">
                       <h3>Анна Павлова</h3>
                       <picture>
@@ -265,7 +339,7 @@
                         <img src="./img/coaches/coach2-desktop@1x.jpg" srcset="./img/coaches/coach2-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера 2.">
                       </picture>
                       <div class="coaches__information">
-                        <p>Алексей Лавров</p>
+                        <h4>Алексей Лавров</h4>
                         <p>Функциональные тренировки</p>
                         <ul>
                           <li>Мастер-тренер Coach Club</li>
@@ -283,81 +357,7 @@
                         <img src="./img/coaches/coach3-desktop@1x.jpg" srcset="./img/coaches/coach3-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера 3.">
                       </picture>
                       <div class="coaches__information">
-                        <p>Александр Пашков</p>
-                        <p>Crossfit</p>
-                        <ul>
-                          <li>Certified Level 3 Trainer</li>
-                          <li>Победитель чемпионата России по&nbsp;CrossFit</li>
-                          <li>Опыт — 6 лет</li>
-                        </ul>
-                      </div>
-
-                  </li>
-                  <li class="coaches__item swiper-slide">
-
-                      <h3>Мария Кетова</h3>
-                      <picture>
-                        <source type="image/webp" media="(max-width: $vp-768)" srcset="./img/coaches/coach4-tablet@1x.webp, ./img/coaches/coach4-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="./img/coaches/coach4-desktop@1x.webp, ./img/coaches/coach4-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: $vp-768)" srcset="./img/coaches/coach4-tablet@1x.jpg, ./img/coaches/coach4-tablet@2x.jpg 2x">
-                        <img src="./img/coaches/coach4-desktop@1x.jpg" srcset="./img/coaches/coach4-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера 4.">
-                      </picture>
-                      <div class="coaches__information">
-                        <p>Мария Кетова</p>
-                        <p>TRX</p>
-                        <ul>
-                          <li>Сертифицированный тренер групповых программ "TRX STC, FTC"</li>
-                          <li>КМС по&nbsp;легкой атлетике</li>
-                          <li>Опыт — 4 года</li>
-                        </ul>
-                      </div>
-                  </li>
-                  <li class="coaches__item swiper-slide">
-                      <h3>Анна Павлова</h3>
-                      <picture>
-                        <source type="image/webp" media="(max-width: $vp-768)" srcset="./img/coaches/coach1-tablet@1x.webp, ./img/coaches/coach1-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="./img/coaches/coach1-desktop@1x.webp, ./img/coaches/coach1-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: $vp-768)" srcset="./img/coaches/coach1-tablet@1x.jpg, ./img/coaches/coach1-tablet@2x.jpg 2x">
-                        <img src="./img/coaches/coach1-desktop@1x.jpg" srcset="./img/coaches/coach1-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера 1.">
-                      </picture>
-                      <div class="coaches__information">
-                        <p>Анна Павлова</p>
-                        <p>Stretching</p>
-                        <ul>
-                          <li>Дипломированный специалист РГУФКСМиТ</li>
-                          <li>Мастер спорта России по&nbsp;художественной гимнастике</li>
-                          <li>Опыт — 4 года</li>
-                        </ul>
-                      </div>
-                  </li>
-                  <li class="coaches__item swiper-slide">
-                      <h3>Алексей Лавров</h3>
-                      <picture>
-                        <source type="image/webp" media="(max-width: $vp-768)" srcset="./img/coaches/coach2-tablet@1x.webp, ./img/coaches/coach2-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="./img/coaches/coach2-desktop@1x.webp, ./img/coaches/coach2-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: $vp-768)" srcset="./img/coaches/coach2-tablet@1x.jpg, ./img/coaches/coach2-tablet@2x.jpg 2x">
-                        <img src="./img/coaches/coach2-desktop@1x.jpg" srcset="./img/coaches/coach2-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера 2.">
-                      </picture>
-                      <div class="coaches__information">
-                        <p>Алексей Лавров</p>
-                        <p>Функциональные тренировки</p>
-                        <ul>
-                          <li>Мастер-тренер Coach Club</li>
-                          <li>Инструктор проекта «Гонка героев»</li>
-                          <li>Опыт — 5 лет</li>
-                        </ul>
-                      </div>
-                  </li>
-                  <li class="coaches__item swiper-slide">
-                      <h3>Александр Пашков</h3>
-                      <picture>
-                        <source type="image/webp" media="(max-width: $vp-768)" srcset="./img/coaches/coach3-tablet@1x.webp, ./img/coaches/coach3-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="./img/coaches/coach3-desktop@1x.webp, ./img/coaches/coach3-desktop@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: $vp-768)" srcset="./img/coaches/coach3-tablet@1x.jpg, ./img/coaches/coach3-tablet@2x.jpg 2x">
-                        <img src="./img/coaches/coach3-desktop@1x.jpg" srcset="./img/coaches/coach3-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера 3.">
-                      </picture>
-                      <div class="coaches__information">
-                        <p>Александр Пашков</p>
+                        <h4>Александр Пашков</h4>
                         <p>Crossfit</p>
                         <ul>
                           <li>Certified Level 3 Trainer</li>
@@ -375,7 +375,7 @@
                       <img src="./img/coaches/coach4-desktop@1x.jpg" srcset="./img/coaches/coach4-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера 4.">
                     </picture>
                     <div class="coaches__information">
-                      <p>Мария Кетова</p>
+                      <h4>Мария Кетова</h4>
                       <p>TRX</p>
                       <ul>
                         <li>Сертифицированный тренер групповых программ "TRX STC, FTC"</li>
@@ -386,7 +386,7 @@
                 </li>
                 </ul>
               </div>
-              <button class="swiper__button-next" type="button" aria-label="Вперед."></button>
+              <button class="coaches__button coaches__button--next" type="button" aria-label="Вперед."></button>
             </div>
             </div>
         </section>
