@@ -1153,6 +1153,30 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.accordion {
+  margin: 0 auto 50px auto;
+}
+.accordion .accordion {
+  width: 90%;
+  margin: 0 auto;
+}
+.accordion__element:last-child {
+  margin-bottom: 0;
+}
+.accordion__element {
+  margin-bottom: 34px;
+  padding: 10px;
+}
+.accordion__button {
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.accordion__wrapper {
+  padding: 10px;
+}
+
 @font-face {
   font-style: normal;
   font-weight: 600;
@@ -1406,6 +1430,22 @@ button,
   .container {
     padding: 0 16px;
   }
+}
+
+[data-accordion=element].is-active > [data-accordion=content] {
+  max-height: 100%;
+}
+
+[data-accordion=parent].no-transition [data-accordion=content] {
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-accordion=content] {
+  max-height: 0;
+  -webkit-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+  overflow: hidden;
 }
 
 [data-tabs=parent] {
@@ -3942,6 +3982,125 @@ button,
   .promo__item-link {
     margin: 0 auto;
   }
+}
+
+.faq {
+  background-color: #f8f9fc;
+}
+
+.faq__wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 120px 0;
+  max-width: 1160px;
+}
+@media (max-width: 1199px) {
+  .faq__wrapper {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .faq__wrapper {
+    padding: 70px 0;
+  }
+}
+
+.faq__title {
+  margin: 0 0 39px 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 64.8px;
+  letter-spacing: 1.7px;
+}
+@media (max-width: 1199px) {
+  .faq__title {
+    margin: 0 7px 31px 0;
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 1.3px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .faq__title {
+    margin: 0 5px 42px 0;
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+}
+
+.faq__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 23.2% 76.8%;
+  grid-template-columns: 23.2% 76.8%;
+  gap: 40px;
+}
+
+.faq__controls {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  max-width: 260px;
+}
+
+.faq__controls .tabs__control {
+  padding: 18px 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #102654;
+  background-color: transparent;
+  cursor: pointer;
+  border: solid 1px rgba(16, 38, 84, 0.2);
+}
+
+.faq__controls .tabs__control.is-active {
+  color: #ffffff;
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+}
+
+.accordinon {
+  margin: 0;
+}
+
+.accordion__wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion__button {
+  margin: 0;
+  padding: 25px 0;
+  padding-left: 0;
+  color: #102654;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  background: transparent;
+  border-top: solid 1px rgba(16, 38, 84, 0.2);
+  text-transform: none;
+}
+
+.accordion__element {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion__text {
+  margin: 0 0 25px 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25.2px;
 }
 
 .reviews__wrapper {
