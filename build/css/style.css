@@ -2877,7 +2877,7 @@ button,
 @media (max-width: 1199px) {
   .event__wrapper {
     padding: 100px 0 56px 0;
-    max-width: 678px;
+    max-width: 994px;
   }
 }
 @media (max-width: 1023px) {
@@ -2892,33 +2892,31 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 70px 0 35px 0;
-    max-width: 290px;
   }
 }
 
 .event__content-wrapper {
   max-width: 500px;
-  padding: 85px 79px 87px 78px;
+  padding: 75px 79px 87px 70px;
   background-color: #ed0233;
   color: #ffffff;
 }
 @media (max-width: 1199px) {
   .event__content-wrapper {
-    max-width: 292px;
     padding: 51px 45px;
   }
 }
 @media (max-width: 1023px) {
   .event__content-wrapper {
-    padding: 51px 45px 50px 45px;
+    padding: 30px 45px 30px;
     width: 43%;
   }
 }
 @media (max-width: 767px) {
   .event__content-wrapper {
-    padding: 50px 43px 51px 43px;
     width: 100%;
     max-width: 100%;
+    padding: 50px 43px 51px 43px;
   }
 }
 
@@ -2931,11 +2929,11 @@ button,
   margin: 0 0 10px 0;
   max-width: 343px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .event__main-content {
     gap: 4px 35px;
     margin: 0 0 1px 0;
-    max-width: 292px;
+    max-width: 202px;
   }
 }
 @media (max-width: 767px) {
@@ -2958,6 +2956,7 @@ button,
   letter-spacing: 3%;
   font-weight: 600;
   line-height: 96%;
+  text-transform: uppercase;
 }
 @media (max-width: 1199px) {
   .event__title {
@@ -2967,7 +2966,7 @@ button,
 }
 @media (max-width: 1023px) {
   .event__title {
-    margin: 0 0 0 7px;
+    margin: 0;
     max-width: 120px;
     font-size: 48px;
     letter-spacing: 1.5px;
@@ -2978,13 +2977,13 @@ button,
 .event__time {
   margin: -5px 0 0 0;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
   .event__date,
 .event__time {
     margin: -4px 0 0 0;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .event__date,
 .event__time {
     -ms-grid-column-align: end;
@@ -3061,7 +3060,7 @@ button,
     line-height: 50px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .event__date dd,
 .event__time dd {
     font-size: 24px;
@@ -3094,36 +3093,34 @@ button,
 }
 
 .event__text {
-  margin: 0 0 45px 0;
-  padding: 0;
+  margin: 0 0 55px 0;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 27px;
 }
 @media (max-width: 1199px) {
   .event__text {
-    margin: 0 0 31px 0;
-    padding: 100px 0 60px 0;
-    font-size: 12px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .event__text {
     font-size: 12px;
+    line-height: 18px;
   }
 }
 
 .event__content-wrapper .button {
   width: 100%;
   max-width: 343px;
-  padding: 25px 10px 24px 10px;
+  padding: 25px 10px;
 }
 @media (max-width: 1023px) {
   .event__content-wrapper .button {
     margin: 30px 0 0 0;
-    padding: 13px 10px 12px 10px;
+    padding: 13px 10px;
     border: 2px solid #ffffff;
     font-size: 10px;
     line-height: 11.7px;
@@ -3133,12 +3130,10 @@ button,
 @media (max-width: 767px) {
   .event__content-wrapper .button {
     max-width: 100%;
-    margin: 30px 0 0 0;
   }
 }
 
 .event__image-wrapper {
-  width: 100%;
   min-height: 500px;
   background-color: #003d85;
 }
