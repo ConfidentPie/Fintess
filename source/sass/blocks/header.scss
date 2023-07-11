@@ -104,7 +104,6 @@
 
   @include vp-767 {
     max-width: 737px;
-    grid-template-columns: 45% 55%;
     gap: 22px 0;
     margin: 0 10px;
     width: calc(100% - 20px);
@@ -117,7 +116,7 @@
 
   @include vp-767 {
     justify-self: start;
-    max-width: 213px;
+    max-width: 189px;
   }
 }
 
