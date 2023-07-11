@@ -197,6 +197,34 @@
   }
 }
 
+.membership__button {
+  display: inline-block;
+  padding: 27px 44px 28px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-sapphire;
+  border: 2px solid $color-sapphire-faq;
+  user-select: none;
+
+  @include hover-focus {
+    border-color: $color-sapphire;
+  }
+
+  &:active {
+    background: $button-buy-gradient;
+    color: $color-default-white;
+    border-color: transparent;
+  }
+
+  @include vp-767 {
+    padding: 20px 10px;
+  }
+}
+
 .membership__background-wrapper {
   position: absolute;
   bottom: 0;
