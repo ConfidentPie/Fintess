@@ -207,17 +207,19 @@
   text-transform: uppercase;
   text-align: center;
   color: $color-sapphire;
-  border: 2px solid $color-sapphire-faq;
+  outline: 2px solid $color-sapphire-faq;
   user-select: none;
 
   @include hover-focus {
-    border-color: $color-sapphire;
-  }
-
-  &:active {
     background: $button-buy-gradient;
     color: $color-default-white;
-    border-color: transparent;
+    outline-color: transparent;
+  }
+
+  @include active {
+    background: $button-buy-gradient;
+    color: $color-default-white;
+    outline-color: transparent;
   }
 
   @include vp-767 {
