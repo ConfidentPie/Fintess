@@ -24,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     const form = new Form();
     window.form = form;
+    form.init();
     initVideoPlayer();
     initTabs();
     getSlidesTabs();
