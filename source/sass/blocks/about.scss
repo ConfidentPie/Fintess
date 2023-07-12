@@ -1,14 +1,37 @@
 .about__wrapper {
-  max-width: 1100px;
+  max-width: 1160px;
   display: flex;
   margin: 0 auto;
   padding: 120px 0;
   gap: 85px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+    padding: 100px 0 73px 0;
+  }
+
+  @include vp-767 {
+    gap: 25.5px;
+    align-items: flex-start;
+    padding: 64px 0 70px 0;
+  }
 }
 
 .about__text-block {
   max-width: 355px;
   padding-top: 39px;
+
+  @include vp-1199 {
+    padding: 0;
+    max-width: 900px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    text-align: left;
+  }
 }
 
 .about__title {
@@ -17,18 +40,59 @@
   font-size: 48px;
   letter-spacing: 3%;
   line-height: 58px;
+
+  @include vp-1199 {
+    margin: 0 15px 0 0;
+    font-size: 42px;
+    line-height: 51px;
+    letter-spacing: 1.4px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: 1px;
+  }
 }
 
 .about__feature {
   margin: 0 0 55px 0;
   font-size: 18px;
+
+  @include vp-1199 {
+    margin: 0 0 35px 0;
+  }
+
+  @include vp-767 {
+    margin: 0 0 25px 0;
+  }
 }
 
 .about__description-wrapper {
+  @include vp-1199 {
+    margin-bottom: 50px;
+  }
+}
+
+.about__description-wrapper p {
   font-weight: 300;
 
-  @include vp-1279 {
+  @include vp-1199 {
     max-width: 502px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    max-width: 502px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 8px 0;
+    max-width: 258px;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    max-width: 100%;
   }
 }
 
@@ -47,6 +111,48 @@
   max-width: 660px;
   min-height: 511px;
   position: relative;
+
+  @include vp-1199 {
+    padding: 0 0 110px 0;
+    max-width: 100%;
+    min-height: 0;
+  }
+
+  @include vp-767 {
+    margin: 0 0 0 -15px;
+    padding: 0;
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
+
+.about__photo {
+  width: 100%;
+  background-color: $color-grey;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    width: 678px;
+    height: 345px;
+    aspect-ratio: auto;
+  }
+
+  @include vp-767 {
+    margin: 0 0 40px 0;
+    width: 100%;
+    height: auto;
+    min-height: 313px;
+  }
+}
+
+.about__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include vp-767 {
+    max-height: 460px;
+  }
 }
 
 .about__video {
@@ -56,6 +162,24 @@
   width: 364px;
   height: 228px;
   background-color: $color-egyptian-blue;
+
+  @include vp-1199 {
+    top: 261px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 167px;
+    transform: translateX(0);
+  }
 }
 
 .about__video-player {
@@ -82,8 +206,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 36%;
-    left: 38%;
+    top: 42%;
+    left: 44%;
     width: 17px;
     height: 17px;
     background-image: url("./../img/svg/play.svg");

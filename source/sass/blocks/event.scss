@@ -7,7 +7,7 @@
 
   @include vp-1199 {
     padding: 100px 0 56px 0;
-    max-width: 678px;
+    max-width: 994px;
   }
 
   @include vp-1023 {
@@ -17,30 +17,28 @@
   @include vp-767 {
     flex-direction: column;
     padding: 70px 0 35px 0;
-    max-width: 290px;
   }
 }
 
 .event__content-wrapper {
   max-width: 500px;
-  padding: 85px 79px 87px 78px;
+  padding: 75px 79px 87px 70px;
   background-color: #ed0233;
   color: $color-default-white;
 
   @include vp-1199 {
-    max-width: 292px;
     padding: 51px 45px;
   }
 
   @include vp-1023 {
-    padding: 51px 45px 50px 45px;
+    padding: 30px 45px 30px;
     width: 43%;
   }
 
   @include vp-767 {
-    padding: 50px 43px 51px 43px;
     width: 100%;
     max-width: 100%;
+    padding: 50px 43px 51px 43px;
   }
 }
 
@@ -51,10 +49,10 @@
   margin: 0 0 10px 0;
   max-width: 343px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     gap: 4px 35px;
     margin: 0 0 1px 0;
-    max-width: 292px;
+    max-width: 202px;
   }
 
   @include vp-767 {
@@ -72,6 +70,7 @@
   letter-spacing: 3%;
   font-weight: 600;
   line-height: 96%;
+  text-transform: uppercase;
 
   @include vp-1199 {
     font-size: 72px;
@@ -79,7 +78,7 @@
   }
 
   @include vp-1023 {
-    margin: 0 0 0 7px;
+    margin: 0;
     max-width: 120px;
     font-size: 48px;
     letter-spacing: 1.5px;
@@ -90,11 +89,11 @@
 .event__time {
   margin: -5px 0 0 0;
 
-  @include vp-1199 {
+  @include vp-1023 {
     margin: -4px 0 0 0;
   }
 
-  @include vp-1023 {
+  @include vp-767 {
     justify-self: end;
     margin: -4px 2px 0 0;
     max-width: 56px;
@@ -157,7 +156,7 @@
     line-height: 50px;
   }
 
-  @include vp-1023 {
+  @include vp-767 {
     font-size: 24px;
     line-height: 35px;
   }
@@ -184,31 +183,31 @@
 }
 
 .event__text {
-  margin: 0 0 45px 0;
-  padding: 0;
+  margin: 0 0 55px 0;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 27px;
 
   @include vp-1199 {
-    margin: 0 0 31px 0;
-    padding: 100px 0 60px 0;
-    font-size: 12px;
-    justify-content: center;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
-  @include vp-767 {
+  @include vp-1023 {
     font-size: 12px;
+    line-height: 18px;
   }
 }
 
 .event__content-wrapper .button {
   width: 100%;
   max-width: 343px;
-  padding: 25px 10px 24px 10px;
+  padding: 25px 10px;
 
   @include vp-1023 {
     margin: 30px 0 0 0;
-    padding: 13px 10px 12px 10px;
+    padding: 13px 10px;
     border: 2px solid $color-default-white;
     font-size: 10px;
     line-height: 11.7px;
@@ -217,12 +216,10 @@
 
   @include vp-767 {
     max-width: 100%;
-    margin: 30px 0 0 0;
   }
 }
 
 .event__image-wrapper {
-  width: 100%;
   min-height: 500px;
   background-color: $color-dark-cerulian;
 

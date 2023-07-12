@@ -10,6 +10,17 @@
   max-width: 683px;
   margin: 0 auto;
   padding: 56px 159px 70px 120px;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    padding: 61px 90px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    padding: 64px 15px;
+    max-width: 100vw;
+  }
 }
 
 .contacts__title {
@@ -35,9 +46,9 @@
   }
 }
 
-.contacts__wrapper address,
-.contacts__wrapper p,
-.contacts__wrapper a {
+.contacts__lists address,
+.contacts__lists p,
+.contacts__lists a {
   margin: 0;
   font-weight: 400;
   font-style: normal;
@@ -62,7 +73,7 @@
     content: "";
     position: absolute;
     top: 7px;
-    left: 190px;
+    left: 225px;
     width: 1px;
     height: 89%;
     background-color: $color-light-slate-grey;
