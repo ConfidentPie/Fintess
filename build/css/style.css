@@ -1414,11 +1414,11 @@ button,
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 103px;
 }
-@media (max-width: 1439px) {
+@media (max-width: 1199px) {
   .container {
-    padding: 0 32px;
+    padding: 0 45px;
   }
 }
 @media (max-width: 1023px) {
@@ -1428,7 +1428,7 @@ button,
 }
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 15px;
   }
 }
 
@@ -4417,6 +4417,12 @@ button,
   grid-template-columns: 23.2% 76.8%;
   gap: 40px;
 }
+@media (max-width: 1199px) {
+  .faq__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
 
 .faq__controls {
   position: relative;
@@ -4428,7 +4434,24 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-  max-width: 260px;
+}
+@media (max-width: 1199px) {
+  .faq__controls {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .faq__controls {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8px;
+  }
 }
 
 .faq__controls .tabs__control {
@@ -4440,6 +4463,16 @@ button,
   background-color: transparent;
   cursor: pointer;
   border: solid 1px rgba(16, 38, 84, 0.2);
+}
+@media (max-width: 1199px) {
+  .faq__controls .tabs__control {
+    width: 162px;
+  }
+}
+@media (max-width: 767px) {
+  .faq__controls .tabs__control {
+    width: 141px;
+  }
 }
 
 .faq__controls .tabs__control.is-active {
