@@ -129,23 +129,13 @@
   }
 
   &.is-active {
+    color: $color-sapphire;
     opacity: 1;
     pointer-events: none;
-  }
-}
 
-.membership__button.is--disabled {
-  opacity: 20%;
-  pointer-events: none;
-  cursor: default;
-}
-
-.membership__control.is--active {
-  color: $color-sapphire;
-  opacity: 100%;
-
-  &::before {
-    transform: scale(1);
+    &::before {
+      transform: scale(1);
+    }
   }
 }
 
@@ -243,6 +233,10 @@
   outline: 2px solid $color-sapphire-faq;
   user-select: none;
 
+  @include vp-767 {
+    padding: 20px 10px;
+  }
+
   @include hover-focus {
     color: $color-sapphire;
     outline-color: $color-sapphire;
@@ -252,10 +246,6 @@
     background: $button-buy-gradient;
     color: $color-default-white;
     outline-color: transparent;
-  }
-
-  @include vp-767 {
-    padding: 20px 10px;
   }
 }
 

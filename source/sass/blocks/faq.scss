@@ -96,11 +96,11 @@
   }
 
   @include vp-767 {
-    max-width:141px;
+    max-width: 141px;
   }
 }
 
-.faq__controls .faq__control.is--active{
+.faq__controls .faq__control.is-active {
   color: $color-default-white;
   background: $button-buy-gradient;
 }
