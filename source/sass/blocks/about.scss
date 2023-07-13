@@ -89,9 +89,6 @@
   @include vp-767 {
     margin: 0 0 8px 0;
     max-width: 258px;
-  }
-
-  @media (min-width: 320px) and (max-width: 767px) {
     max-width: 100%;
   }
 }
@@ -192,25 +189,66 @@
 }
 
 .about__play-button {
+  padding: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  content: "";
   width: 72px;
   height: 72px;
-  border: none;
+  top: 50%;
+  left: 50%;
   border-radius: 50%;
-  background: $button-buy-gradient;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  outline: 2px solid rgba($color-torch-red, 0.2);
+  outline-offset: 14px;
+  z-index: 3;
   cursor: pointer;
 
   &::before {
-    content: "";
     position: absolute;
-    top: 42%;
-    left: 44%;
-    width: 17px;
-    height: 17px;
-    background-image: url("./../img/svg/play.svg");
-    background-repeat: no-repeat;
+    content: "";
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: $button-buy-gradient;
+    border-radius: 50%;
+    z-index: 1;
   }
+
+  &:focus svg {
+    fill: $color-sapphire;
+  }
+
+  @include focus {
+    outline-color: $color-sapphire;
+  }
+
+  &:focus::before {
+    background: #ffffff;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    outline-color: $color-sapphire;
+  }
+
+  &:disabled svg {
+    opacity: 0.4;
+    fill: $color-sapphire;
+  }
+
+  &:disabled::before {
+    opacity: 0.4;
+    background: $color-default-white;
+  }
+}
+
+.about__play-button svg {
+  position: absolute;
+  fill: $color-default-white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -50%);
+  z-index: 4;
 }

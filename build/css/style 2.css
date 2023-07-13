@@ -4774,7 +4774,7 @@ button,
 .accordion__button-icon:hover, .accordion__button-icon:focus {
   background-color: #102654;
 }
-.accordion__button-icon:hover:before, .accordion__button-icon:hover:after, .accordion__button-icon:focus:before, .accordion__button-icon:focus:after {
+.accordion__button-icon:hover::before, .accordion__button-icon:hover::after, .accordion__button-icon:focus::before, .accordion__button-icon:focus::after {
   background-color: #ffffff;
 }
 
@@ -4784,14 +4784,8 @@ button,
 .accordion__element.is-active .accordion__button-icon:before {
   background: #ffffff;
 }
-.accordion__element.is-active .accordion__button-icon:after {
+.accordion__element.is-active .accordion__button-icon::after {
   display: none;
-}
-
-.accordion__element.is--disabled .accordion__button-icon:before, .accordion__element.is--disabled .accordion__button-icon:after {
-  opacity: 30%;
-  pointer-events: none;
-  cursor: default;
 }
 
 .accordion__element {
