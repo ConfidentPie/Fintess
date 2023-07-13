@@ -4,7 +4,7 @@
   padding: 105px 0;
   max-width: 1160px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     padding: 100px 0;
   }
 
@@ -21,7 +21,7 @@
   line-height: 64.8px;
   letter-spacing: 1.7px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     margin: 0 7px 31px 0;
     font-size: 42px;
     line-height: 50.4px;
@@ -45,7 +45,7 @@
 }
 
 .coaches__swiper {
-  @include vp-1199 {
+  @include vp-1279 {
     margin: 0 50px;
   }
 
@@ -60,7 +60,7 @@
   background-color: $color-dark-cerulian;
   overflow: hidden;
 
-  @include vp-1199 {
+  @include vp-1279 {
     min-width: 268px;
     min-height: 294px;
     aspect-ratio: 268/294;
@@ -93,7 +93,7 @@
   line-height: 27px;
   text-align: center;
 
-  @include vp-1199 {
+  @include vp-1279 {
     max-width: 100%;
   }
 }
@@ -167,7 +167,7 @@
     background-color: $color-sapphire;
   }
 
-  @include vp-1199 {
+  @include vp-1279 {
     top: 55%;
   }
 
@@ -185,7 +185,7 @@
   &--next {
     right: -60px;
 
-    @include vp-1199 {
+    @include vp-1279 {
       right: -20px;
     }
 
@@ -198,7 +198,7 @@
     left: -60px;
     transform: rotate(180deg);
 
-    @include vp-1199 {
+    @include vp-1279 {
       left: -20px;
     }
 

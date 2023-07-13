@@ -4,7 +4,7 @@
   background-color: $color-venetian-red;
   color: $color-default-white;
 
-  @include vp-1199 {
+  @include vp-1279 {
     min-height: 554px;
     background: $hero-gradient-mobile;
   }
@@ -75,7 +75,7 @@
   margin: 0 auto;
   max-width: 1160px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     grid-template-columns: 48% 52%;
     padding: 0 0 80px 0;
   }
@@ -96,7 +96,7 @@
   margin: 45px 10px 0 0;
   text-align: end;
 
-  @include vp-1199 {
+  @include vp-1279 {
     max-width: 324px;
     gap: 35px 0;
     margin: 27px 2px 0 0;
@@ -129,7 +129,7 @@
   line-height: 57.6px;
   letter-spacing: 1.3px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     margin: 0 3px 7px 0;
     font-size: 34px;
     line-height: 40.8px;
@@ -154,7 +154,7 @@
   text-transform: uppercase;
   -webkit-text-stroke: 5px $color-default-white;
 
-  @include vp-1199 {
+  @include vp-1279 {
     font-size: 72px;
     line-height: 86.4px;
     letter-spacing: 3.4px;
@@ -182,7 +182,7 @@
   font-size: 14px;
   line-height: 21px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     margin: 0 0 25px 0;
   }
 

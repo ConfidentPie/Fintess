@@ -5,7 +5,7 @@
   padding: 120px 0;
   gap: 85px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     flex-direction: column;
     gap: 11px;
     align-items: center;
@@ -23,7 +23,7 @@
   max-width: 355px;
   padding-top: 39px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     padding: 0;
     max-width: 900px;
     text-align: center;
@@ -41,7 +41,7 @@
   letter-spacing: 3%;
   line-height: 58px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     margin: 0 15px 0 0;
     font-size: 42px;
     line-height: 51px;
@@ -60,7 +60,7 @@
   margin: 0 0 55px 0;
   font-size: 18px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     margin: 0 0 35px 0;
   }
 
@@ -70,7 +70,7 @@
 }
 
 .about__description-wrapper {
-  @include vp-1199 {
+  @include vp-1279 {
     margin-bottom: 50px;
   }
 }
@@ -78,7 +78,7 @@
 .about__description-wrapper p {
   font-weight: 300;
 
-  @include vp-1199 {
+  @include vp-1279 {
     max-width: 502px;
   }
 
@@ -112,7 +112,7 @@
   min-height: 511px;
   position: relative;
 
-  @include vp-1199 {
+  @include vp-1279 {
     padding: 0 0 110px 0;
     max-width: 100%;
     min-height: 0;
@@ -130,7 +130,7 @@
   width: 100%;
   background-color: $color-grey;
 
-  @include vp-1199 {
+  @include vp-1279 {
     margin: 0 auto;
     width: 678px;
     height: 345px;
@@ -163,7 +163,7 @@
   height: 228px;
   background-color: $color-egyptian-blue;
 
-  @include vp-1199 {
+  @include vp-1279 {
     top: 261px;
     left: 50%;
     transform: translateX(-50%);

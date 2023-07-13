@@ -4,7 +4,7 @@
   padding: 67px 0 120px 0;
   max-width: 672px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     padding: 42px 0 100px 0;
   }
 
@@ -22,7 +22,7 @@
   letter-spacing: 1.7px;
   text-align: center;
 
-  @include vp-1199 {
+  @include vp-1279 {
     margin: 0 0 50px 0;
     font-size: 42px;
     line-height: 50.4px;
@@ -39,7 +39,7 @@
 .reviews__swiper {
   max-width: 560px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     max-width: 566px;
   }
 
@@ -67,7 +67,7 @@
   background-color: $color-resolution-blue;
   color: $color-default-white;
 
-  @include vp-1199 {
+  @include vp-1279 {
     max-width: 566px;
     padding: 62px 65px 55px;
   }
@@ -119,7 +119,7 @@
   padding: 0;
   line-height: 22.5px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     line-height: 23px;
   }
 
@@ -157,7 +157,7 @@
     opacity: 50%;
   }
 
-  @include vp-1199 {
+  @include vp-1279 {
     top: 49%;
   }
 
