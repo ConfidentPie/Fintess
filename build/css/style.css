@@ -2314,7 +2314,7 @@ button,
 .header__wrapper {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 30px 0 51px 0;
+  padding: 36px 0 51px 0;
 }
 
 .header__nav {
@@ -2405,6 +2405,7 @@ button,
 }
 
 .header__hero-wrapper {
+  padding: 65px 10px 0 0;
   display: -ms-grid;
   display: grid;
   max-width: 377px;
@@ -2415,7 +2416,6 @@ button,
       align-self: center;
   -ms-grid-column-align: end;
       justify-self: end;
-  margin: 45px 10px 0 0;
   text-align: end;
 }
 @media (max-width: 1279px) {
@@ -2451,7 +2451,7 @@ button,
 }
 
 .header__hero-title p {
-  margin: 0 51px 15px 0;
+  margin: 0 51px 0 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   text-transform: lowercase;
   font-weight: 600;
@@ -2478,11 +2478,12 @@ button,
 
 .header__hero-title h1 {
   margin: 0;
+  padding: 12px 0 5px 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110.4px;
-  letter-spacing: 4.8px;
+  letter-spacing: 3.8px;
   text-transform: uppercase;
   -webkit-text-stroke: 5px #ffffff;
 }
@@ -2525,7 +2526,7 @@ button,
   grid-column: 1/2;
   -ms-grid-row-align: end;
       align-self: end;
-  margin: 0 20px 35px 0;
+  margin: 0 23px 41px 0;
   padding: 0;
   list-style-type: none;
   font-size: 14px;
@@ -2547,7 +2548,7 @@ button,
 .header__image {
   max-width: 500px;
   height: 556px;
-  margin: -22px 0 0 34px;
+  margin: -9px 0 0 34px;
   background-color: #103aae;
 }
 @media (max-width: 1279px) {
@@ -2831,8 +2832,8 @@ button,
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  padding: 120px 0;
-  gap: 85px;
+  padding: 120px 0 125px;
+  gap: 90px;
 }
 @media (max-width: 1279px) {
   .about__wrapper {
@@ -2858,8 +2859,8 @@ button,
 }
 
 .about__text-block {
-  max-width: 355px;
-  padding-top: 39px;
+  max-width: 410px;
+  padding: 39px 0 0 60px;
 }
 @media (max-width: 1279px) {
   .about__text-block {
@@ -2875,10 +2876,10 @@ button,
 }
 
 .about__title {
-  margin: 0 0 25px 0;
+  margin: 0 0 8px 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 48px;
-  letter-spacing: 3%;
+  letter-spacing: 1.2px;
   line-height: 58px;
 }
 @media (max-width: 1279px) {
@@ -2899,7 +2900,7 @@ button,
 }
 
 .about__feature {
-  margin: 0 0 55px 0;
+  margin: 0 0 40px 0;
   font-size: 18px;
 }
 @media (max-width: 1279px) {
@@ -2941,9 +2942,12 @@ button,
 }
 
 .about__description--primary {
-  margin-top: 0;
+  margin: 0 0 8px 0;
 }
 
+.about__description--secondary {
+  margin: 0 0 0 0;
+}
 @media (max-width: 1279px) {
   .about__description--secondary {
     display: none;
@@ -3113,7 +3117,7 @@ button,
 .event__wrapper {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 120px 0 0 0;
+  padding: 116px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3144,7 +3148,7 @@ button,
 
 .event__content-wrapper {
   max-width: 500px;
-  padding: 75px 79px 87px 70px;
+  padding: 85px 79px 87px 78px;
   background-color: #ed0233;
   color: #ffffff;
 }
@@ -3200,7 +3204,7 @@ button,
   margin: 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 82px;
-  letter-spacing: 3%;
+  letter-spacing: 2.5px;
   font-weight: 600;
   line-height: 96%;
   text-transform: uppercase;
@@ -3426,7 +3430,7 @@ button,
 .membership__wrapper {
   margin: 0 auto;
   text-align: center;
-  padding: 120px 0;
+  padding: 128px 0 120px;
   max-width: 1160px;
 }
 @media (max-width: 1279px) {
@@ -3441,11 +3445,11 @@ button,
 }
 
 .membership__title {
-  margin: 0 0 25px 0;
+  margin: 0 0 14px 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 52px;
   line-height: 50.4px;
-  letter-spacing: 1.5px;
+  letter-spacing: 2.5px;
 }
 @media (max-width: 1279px) {
   .membership__title {
@@ -3627,14 +3631,14 @@ button,
 }
 
 .membership__item h3 {
-  margin: 0 0 22px 0;
+  margin: 0 0 3px 0;
   font-weight: 700;
   font-size: 26px;
   line-height: 39.6px;
 }
 
 .membership__item p {
-  margin: 0 0 96px 0;
+  margin: 0 0 66px 0;
 }
 
 .membership__price {
@@ -3645,7 +3649,7 @@ button,
 }
 
 .membership__price p {
-  margin: 0 0 60px 0;
+  margin: 0 0 33px 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
@@ -3729,7 +3733,7 @@ button,
 
 .membership img {
   position: absolute;
-  bottom: -181px;
+  bottom: -180px;
   right: 0;
 }
 @media (max-width: 1279px) {

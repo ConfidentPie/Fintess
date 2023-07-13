@@ -1,7 +1,7 @@
 .event__wrapper {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 120px 0 0 0;
+  padding: 116px 0 0 0;
   display: flex;
   justify-content: center;
 
@@ -22,7 +22,7 @@
 
 .event__content-wrapper {
   max-width: 500px;
-  padding: 75px 79px 87px 70px;
+  padding: 85px 79px 87px 78px;
   background-color: #ed0233;
   color: $color-default-white;
 
@@ -67,7 +67,7 @@
   margin: 0;
   font-family: $ff-alumni-sans;
   font-size: 82px;
-  letter-spacing: 3%;
+  letter-spacing: 2.5px;
   font-weight: 600;
   line-height: 96%;
   text-transform: uppercase;

@@ -14,7 +14,7 @@
 .membership__wrapper {
   margin: 0 auto;
   text-align: center;
-  padding: 120px 0;
+  padding: 128px 0 120px;
   max-width: 1160px;
 
   @include vp-1279 {
@@ -27,11 +27,11 @@
 }
 
 .membership__title {
-  margin: 0 0 25px 0;
+  margin: 0 0 14px 0;
   font-family: $ff-alumni-sans;
   font-size: 52px;
   line-height: 50.4px;
-  letter-spacing: 1.5px;
+  letter-spacing: 2.5px;
 
   @include vp-1279 {
     font-size: 42px;
@@ -182,14 +182,14 @@
 }
 
 .membership__item h3 {
-  margin: 0 0 22px 0;
+  margin: 0 0 3px 0;
   font-weight: 700;
   font-size: 26px;
   line-height: 39.6px;
 }
 
 .membership__item p {
-  margin: 0 0 96px 0;
+  margin: 0 0 66px 0;
 }
 
 .membership__price {
@@ -198,7 +198,7 @@
 }
 
 .membership__price p {
-  margin: 0 0 60px 0;
+  margin: 0 0 33px 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
@@ -270,7 +270,7 @@
 
 .membership img {
   position: absolute;
-  bottom: -181px;
+  bottom: -180px;
   right: 0;
 
   @include vp-1279 {
