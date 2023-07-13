@@ -169,15 +169,22 @@
   border-radius: 50%;
   background-color: $color-default-white;
 
-  &:active {
-    background-color: $color-sapphire;
-  }
-
   @include hover-focus {
     background-color: $color-egyptian-blue;
     color: $color-default-white;
   }
+
+  &:active {
+    background-color: $color-sapphire;
+  }
 }
+
+.footer__navigation-link.is--disabled {
+  opacity: 30%;
+  pointer-events: none;
+  cursor: default;
+}
+
 
 .footer__social-list svg {
   position: absolute;

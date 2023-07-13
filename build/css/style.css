@@ -2783,9 +2783,6 @@ button,
   border-radius: 50%;
   background-color: #ffffff;
 }
-.footer__social-link:active {
-  background-color: #102654;
-}
 @media (hover: hover) {
   .footer__social-link:hover:not(.focus-visible) {
     background-color: #103aae;
@@ -2795,6 +2792,15 @@ button,
 .footer__social-link.focus-visible:focus {
   background-color: #103aae;
   color: #ffffff;
+}
+.footer__social-link:active {
+  background-color: #102654;
+}
+
+.footer__navigation-link.is--disabled {
+  opacity: 30%;
+  pointer-events: none;
+  cursor: default;
 }
 
 .footer__social-list svg {
@@ -3520,11 +3526,17 @@ button,
   pointer-events: none;
 }
 
-.membership__control.is-active {
+.membership__button.is--disabled {
+  opacity: 20%;
+  pointer-events: none;
+  cursor: default;
+}
+
+.membership__control.is--active {
   color: #102654;
   opacity: 100%;
 }
-.membership__control.is-active::before {
+.membership__control.is--active::before {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -4617,6 +4629,14 @@ button,
   cursor: pointer;
   border: solid 1px rgba(16, 38, 84, 0.2);
 }
+@media (hover: hover) {
+  .faq__controls .faq__control:hover:not(.focus-visible) {
+    border-color: #102654;
+  }
+}
+.faq__controls .faq__control.focus-visible:focus {
+  border-color: #102654;
+}
 @media (max-width: 1279px) {
   .faq__controls .faq__control {
     width: 100%;
@@ -4628,9 +4648,15 @@ button,
   }
 }
 
-.faq__controls .faq__control.is-active {
+.faq__controls .faq__control.is--active {
   color: #ffffff;
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+}
+
+.faq__controls .faq__control.is--disabled {
+  opacity: 20%;
+  pointer-events: none;
+  cursor: default;
 }
 
 .accordion {
