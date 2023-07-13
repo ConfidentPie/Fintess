@@ -11,13 +11,14 @@
   border: 4px solid $color-default-white;
   user-select: none;
 
-  @include hover {
-    box-shadow: 0 0 10px 1px $color-default-white;
-    text-shadow: 0 0 10px $color-default-white;
+  @include hover-focus {
+    background-color: $color-default-white;
+    color: $color-egyptian-blue;
   }
 
   &:active {
-    opacity: 70%;
+    background-color: $color-default-white;
+    color: $color-sapphire;
   }
 
   @include vp-767 {

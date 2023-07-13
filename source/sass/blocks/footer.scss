@@ -2,7 +2,7 @@
   min-height: 108px;
   background-color: $color-black-russian;
 
-  @include vp-1199 {
+  @include vp-1279 {
     min-height: 114px;
   }
 
@@ -21,7 +21,7 @@
   max-width: 1180px;
   color: $color-default-white;
 
-  @include vp-1199 {
+  @include vp-1279 {
     padding: 44px 0 38px 0;
   }
 
@@ -51,8 +51,8 @@
     opacity: 70%;
   }
 
-  @include vp-1199 {
-    margin: -7px 0 0 0;
+  @include vp-1279 {
+    margin: 0;
     width: 100px;
     min-width: 100px;
     height: auto;
@@ -73,7 +73,7 @@
   padding: 0;
   min-width: 445px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     gap: 10px;
     margin: -4px 0 0 5px;
     min-width: 405px;
@@ -127,20 +127,21 @@
 }
 
 .footer__navigation-link:focus {
-  outline:  1px solid $color-default-white;
+  outline: 1px solid $color-default-white;
   outline-width: 1px;
 }
 
 .footer__social-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1px;
   margin: -7px 6px 0 0;
   padding: 0;
   min-width: 107px;
   max-width: 215px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     margin: -5px -1px 0 0;
     max-width: 107px;
   }
@@ -157,30 +158,62 @@
 
 .footer__social-item {
   position: relative;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 
 .footer__social-link {
-  padding: 5px;
+  position: relative;
+  cursor: pointer;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  padding: 10px 12px;
 
-  &:hover,
-  &:focus {
-    background-color: aliceblue;
-    color: $color-egyptian-blue;
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $color-default-white;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    top: -3px;
+    left: 0;
   }
 
-  &:active {
-    color: $color-sapphire;
+  &:hover svg,
+  &:focus svg,
+  &:active svg {
+    @include hover;
+    color: $color-default-white;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    @include hover;
+    background-color: $color-egyptian-blue;
+  }
+
+  &:active::before {
+    @include active;
+    background-color: $color-sapphire;
   }
 }
 
-.footer__social-list svg {
+.footer__navigation-link.is--disabled {
+  opacity: 30%;
+  pointer-events: none;
+  cursor: default;
+}
+
+
+.footer__social-link svg {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: $color-black-russian;
+
+  @include hover-focus {
+    color: $color-default-white;
+  }
 }

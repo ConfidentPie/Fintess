@@ -1,7 +1,7 @@
 .form {
   max-width: 410px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     max-width: 472px;
   }
 
@@ -15,7 +15,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 
-  @include vp-1199 {
+  @include vp-1279 {
     gap: 62px;
     margin: 0 0 0 1px;
   }
@@ -51,7 +51,11 @@
   }
 
   @include focus {
-    border-bottom: 1px solid $color-egyptian-blue;
+    border: 1px solid $color-default-white;
+  }
+
+  @include active {
+    border: 1px solid $color-default-white;
   }
 }
 
@@ -76,7 +80,7 @@
   border: 3px solid $color-default-white;
   background-color: transparent;
 
-  @include vp-1199 {
+  @include vp-1279 {
     width: 100.5%;
   }
 
