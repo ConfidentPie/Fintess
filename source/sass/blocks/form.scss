@@ -51,7 +51,11 @@
   }
 
   @include focus {
-    border-bottom: 1px solid $color-egyptian-blue;
+    border: 1px solid $color-default-white;
+  }
+
+  @include active {
+    border: 1px solid $color-default-white;
   }
 }
 

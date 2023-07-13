@@ -52,7 +52,7 @@
   }
 
   @include vp-1199 {
-    margin: -7px 0 0 0;
+    margin: 0;
     width: 100px;
     min-width: 100px;
     height: auto;
@@ -127,13 +127,14 @@
 }
 
 .footer__navigation-link:focus {
-  outline:  1px solid $color-default-white;
+  outline: 1px solid $color-default-white;
   outline-width: 1px;
 }
 
 .footer__social-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1px;
   margin: -7px 6px 0 0;
   padding: 0;
@@ -157,24 +158,24 @@
 
 .footer__social-item {
   position: relative;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 
 .footer__social-link {
   padding: 5px;
-  width: 100%;
-  height: 100%;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-
-  &:hover,
-  &:focus {
-    background-color: aliceblue;
-    color: $color-egyptian-blue;
-  }
+  background-color: $color-default-white;
 
   &:active {
-    color: $color-sapphire;
+    background-color: $color-sapphire;
+  }
+
+  @include hover-focus {
+    background-color: $color-egyptian-blue;
+    color: $color-default-white;
   }
 }
 
@@ -183,4 +184,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: $color-black-russian;
+
+  @include hover-focus {
+    color: $color-default-white;
+  }
 }

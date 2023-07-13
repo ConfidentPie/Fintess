@@ -30,10 +30,10 @@
   }
 
   @include vp-767 {
-      font-size: 32px;
-      line-height: 38.5px;
-      letter-spacing: 1.1px;
-    }
+    font-size: 32px;
+    line-height: 38.5px;
+    letter-spacing: 1.1px;
+  }
 }
 
 .reviews__swiper {
@@ -44,8 +44,8 @@
   }
 
   @include vp-767 {
-    max-width: 266px;
-    margin: 0 32px;
+    min-width: 226px;
+    margin: 0 22px;
   }
 }
 
@@ -132,16 +132,24 @@
 
 .reviews__button {
   position: absolute;
-  top: 52%;
-  width: 16px;
-  height: 32px;
+  top: 50%;
+  width: 56px;
+  height: 56px;
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
   cursor: pointer;
+  color: $color-sapphire;
 
-  @include hover {
+  @include hover-focus {
     opacity: 50%;
+    border-radius: 50%;
+    border: 1px solid $color-sapphire;
+  }
+
+  @include active {
+    background-color: $color-sapphire;
+    fill: $color-default-white;
   }
 
   &:disabled {
@@ -150,31 +158,41 @@
   }
 
   @include vp-1199 {
-    top: 55%;
+    top: 49%;
   }
 
-
   @include vp-767 {
-    width: 11px;
+    width: 10px;
     height: 19px;
+
+    @include hover-focus {
+      border: none;
+    }
   }
 
   &--next {
     right: -10px;
-    background-image: url("./../../img/svg/next.svg");
 
-    @include vp-1199 {
+    @include vp-767 {
       right: 0;
     }
   }
 
   &--prev {
     left: -10px;
-    background-image: url("./../../img/svg/prev.svg");
+    transform: rotate(180deg);
 
-    @include vp-1199 {
+    @include vp-767 {
       left: 0;
     }
   }
 }
 
+.reviews__button svg {
+  vertical-align: middle;
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
+}

@@ -194,6 +194,22 @@
   flex-grow: 1;
 }
 
+.promo__item-secondary .promo__item-link:focus {
+  outline: solid 1px $color-sapphire;
+
+  &::before {
+    display: none;
+  }
+}
+
+.promo__item-primary .promo__item-link:focus {
+  outline: solid 1px $color-default-white;
+
+  &::before {
+    display: none;
+  }
+}
+
 .promo__item-link {
   position: relative;
   margin: 0 0 0 -10px;
@@ -205,6 +221,10 @@
   letter-spacing: 0.7px;
   text-transform: uppercase;
   color: $color-resolution-blue;
+
+  &:focus {
+    outline: solid 1px $color-default-white;
+  }
 
   &::before {
     content: "";

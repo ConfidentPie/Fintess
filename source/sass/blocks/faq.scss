@@ -11,12 +11,10 @@
 
   @include vp-1199 {
     padding: 100px 0;
-
   }
 
   @include vp-767 {
     padding: 70px 0;
-
   }
 }
 
@@ -43,6 +41,10 @@
     letter-spacing: 1px;
     text-align: center;
   }
+}
+
+.faq__list {
+  width: 100%;
 }
 
 .faq__container {
@@ -73,7 +75,7 @@
   }
 }
 
-.faq__controls .tabs__control {
+.faq__controls .faq__control {
   padding: 18px 0;
   font-size: 18px;
   font-weight: 700;
@@ -92,7 +94,7 @@
   }
 }
 
-.faq__controls .tabs__control.is-active{
+.faq__controls .faq__control.is-active{
   color: $color-default-white;
   background: $button-buy-gradient;
 }
