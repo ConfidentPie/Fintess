@@ -1,4 +1,4 @@
-.accordinon {
+.accordion {
   margin: 0;
 }
 
@@ -7,29 +7,34 @@
   padding: 0;
 }
 
+
 .accordion__button {
   max-width: 100%;
   position: relative;
   margin: 0;
   padding: 25px 0;
   padding-left: 0;
+  background: transparent;
+}
+
+.accordion__button p {
+  margin: 0;
   color: $color-sapphire;
   font-size: 24px;
   font-weight: 400;
   line-height: 28.8px;
   text-align: left;
-  background: transparent;
-  border-top: solid 1px $color-sapphire-faq;
   text-transform: none;
-}
-
-.accordion__button:last-child {
-  border-bottom: solid 1px $color-sapphire-faq;
 }
 
 .accordion__element {
   margin: 0;
   padding: 0;
+  border-top: solid 1px $color-sapphire-faq;
+
+  &:first-child {
+    border: none;
+  }
 }
 
 .accordion__text {
