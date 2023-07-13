@@ -88,11 +88,11 @@
   border: solid 1px $color-sapphire-faq;
 
   @include vp-1279 {
-    width: 162px;
+    width: 100%;
   }
 
   @include vp-767 {
-    width:141px;
+    max-width:141px;
   }
 }
 

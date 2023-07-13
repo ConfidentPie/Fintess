@@ -222,6 +222,10 @@
   text-transform: uppercase;
   color: $color-resolution-blue;
 
+  @include hover {
+    opacity: 80%;
+  }
+
   &:focus {
     outline: solid 1px $color-default-white;
   }
@@ -239,4 +243,10 @@
   @include vp-767 {
     margin: 0 auto;
   }
+}
+
+ .promo__item-link.is--disabled {
+  opacity: 30%;
+  pointer-events: none;
+  cursor: default;
 }
