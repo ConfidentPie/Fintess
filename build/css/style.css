@@ -4709,7 +4709,8 @@ button,
   background: transparent;
 }
 
-.accordion__button span {
+.accordion__button span:first-child {
+  padding-right: 42px;
   margin: 0;
   color: #102654;
   font-size: 24px;
@@ -4719,13 +4720,8 @@ button,
   text-transform: none;
 }
 @media (max-width: 1279px) {
-  .accordion__button span {
-    max-width: 537px;
-  }
-}
-@media (max-width: 420px) {
-  .accordion__button span {
-    max-width: 238px;
+  .accordion__button span:first-child {
+    padding-right: 32px;
   }
 }
 
@@ -4769,6 +4765,9 @@ button,
   .accordion__button-icon {
     width: 32px;
     height: 32px;
+  }
+  .accordion__button-icon::before, .accordion__button-icon::after {
+    left: 23%;
   }
 }
 .accordion__button-icon:hover, .accordion__button-icon:focus {
@@ -5244,14 +5243,14 @@ button,
   margin: 0;
 }
 
-.blocks-wrapper {
+.blocks-wrapper .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (50%)[2];
   grid-template-columns: repeat(2, 50%);
 }
 @media (max-width: 1279px) {
-  .blocks-wrapper {
+  .blocks-wrapper .container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
