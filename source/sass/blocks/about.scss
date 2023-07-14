@@ -42,7 +42,7 @@
   line-height: 58px;
 
   @include vp-1279 {
-    margin: 0 15px 0 0;
+    margin: 0;
     font-size: 42px;
     line-height: 51px;
     letter-spacing: 1.4px;
@@ -71,7 +71,7 @@
 
 .about__description-wrapper {
   @include vp-1279 {
-    margin-bottom: 50px;
+    margin-bottom: 33px;
   }
 }
 
@@ -79,7 +79,7 @@
   font-weight: 300;
 
   @include vp-1279 {
-    max-width: 502px;
+    max-width: 507px;
   }
 
   @include vp-767 {

@@ -2316,6 +2316,11 @@ button,
   margin: 0 auto;
   padding: 36px 0 51px 0;
 }
+@media (max-width: 1279px) {
+  .header__wrapper {
+    padding: 36px 0 0;
+  }
+}
 
 .header__nav {
   display: -webkit-box;
@@ -2398,9 +2403,10 @@ button,
 }
 @media (max-width: 1279px) {
   .header__hero {
-    -ms-grid-columns: 48% 52%;
-    grid-template-columns: 48% 52%;
+    -ms-grid-columns: 48.3% 51.7%;
+    grid-template-columns: 48.3% 51.7%;
     padding: 0 0 80px 0;
+    gap: 18px;
   }
 }
 @media (max-width: 767px) {
@@ -2428,8 +2434,9 @@ button,
 @media (max-width: 1279px) {
   .header__hero-wrapper {
     max-width: 324px;
-    gap: 35px 0;
-    margin: 27px 2px 0 0;
+    gap: 31px 0;
+    padding: 50px 10px 0 0;
+    margin: -6px -7px 0 0;
   }
 }
 @media (max-width: 767px) {
@@ -2496,6 +2503,7 @@ button,
 }
 @media (max-width: 1279px) {
   .header__hero-title h1 {
+    padding: 0 0 5px 0;
     font-size: 72px;
     line-height: 86.4px;
     letter-spacing: 3.4px;
@@ -2508,6 +2516,11 @@ button,
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+@media (max-width: 1279px) {
+  .header__hero-button {
+    margin-left: 20px;
+  }
 }
 @media (max-width: 767px) {
   .header__hero-button {
@@ -2541,7 +2554,7 @@ button,
 }
 @media (max-width: 1279px) {
   .header__hero-list {
-    margin: 0 0 25px 0;
+    margin: 0 -1px 25px 0;
   }
 }
 @media (max-width: 767px) {
@@ -2562,7 +2575,7 @@ button,
   .header__image {
     max-width: 324px;
     height: 390px;
-    margin: 0 0 0 9px;
+    margin: 17px 0 0 9px;
   }
 }
 @media (max-width: 767px) {
@@ -2895,7 +2908,7 @@ button,
 }
 @media (max-width: 1279px) {
   .about__title {
-    margin: 0 15px 0 0;
+    margin: 0;
     font-size: 42px;
     line-height: 51px;
     letter-spacing: 1.4px;
@@ -2927,7 +2940,7 @@ button,
 
 @media (max-width: 1279px) {
   .about__description-wrapper {
-    margin-bottom: 50px;
+    margin-bottom: 33px;
   }
 }
 
@@ -2936,7 +2949,7 @@ button,
 }
 @media (max-width: 1279px) {
   .about__description-wrapper p {
-    max-width: 502px;
+    max-width: 507px;
   }
 }
 @media (max-width: 767px) {
@@ -3554,7 +3567,7 @@ button,
 }
 @media (max-width: 1279px) {
   .membership__control {
-    padding: 10px 20px 13px 20px;
+    padding: 6px 0 14px;
     font-size: 18px;
     line-height: 27px;
   }
@@ -3630,6 +3643,11 @@ button,
      border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border-image-slice: 7;
 }
+@media (max-width: 1279px) {
+  .membership__item {
+    padding: 50px 20px 58px;
+  }
+}
 @media (max-width: 767px) {
   .membership__item {
     padding: 44px 20px 49px 20px;
@@ -3676,6 +3694,11 @@ button,
   color: #e8e8e8;
   opacity: 48%;
   z-index: -1;
+}
+@media (max-width: 1279px) {
+  .membership__price p {
+    margin: 0 0 34px 0;
+  }
 }
 
 .membership__button {
@@ -3744,10 +3767,10 @@ button,
 }
 @media (max-width: 1279px) {
   .membership img {
-    bottom: -125px;
-    right: 10px;
-    width: 289px;
-    height: 345px;
+    bottom: -123px;
+    right: -77px;
+    width: 426px;
+    height: 442px;
   }
 }
 

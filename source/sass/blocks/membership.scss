@@ -115,7 +115,7 @@
   }
 
   @include vp-1279 {
-    padding: 10px 20px 13px 20px;
+    padding: 6px 0 14px;
     font-size: 18px;
     line-height: 27px;
   }
@@ -176,6 +176,10 @@
     border-image-slice: 7;
   }
 
+  @include vp-1279 {
+    padding: 50px 20px 58px;
+  }
+
   @include vp-767 {
     padding: 44px 20px 49px 20px;
   }
@@ -217,6 +221,10 @@
     color: #e8e8e8;
     opacity: 48%;
     z-index: -1;
+  }
+
+  @include vp-1279 {
+    margin: 0 0 34px 0;
   }
 }
 
@@ -274,9 +282,9 @@
   right: 0;
 
   @include vp-1279 {
-    bottom: -125px;
-    right: 10px;
-    width: 289px;
-    height: 345px;
+    bottom: -123px;
+    right: -77px;
+    width: 426px;
+    height: 442px;
   }
 }
