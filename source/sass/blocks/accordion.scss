@@ -12,7 +12,8 @@
   justify-content: space-between;
   max-width: 100%;
   margin: 0;
-  padding: 25px 0;
+  padding: 32px 0 31px;
+  line-height: 28.8px;
   position: relative;
   background: transparent;
 }
@@ -23,7 +24,6 @@
   color: $color-sapphire;
   font-size: 24px;
   font-weight: 400;
-  line-height: 28.8px;
   text-align: left;
   text-transform: none;
 
@@ -34,17 +34,18 @@
 
 .accordion__button-icon {
   position: absolute;
-  right: 50px;
+  top: 26px;
+  right: 32px;
   width: 42px;
   height: 42px;
   border-radius: 50%;
   outline: 1px solid $color-sapphire;
 
   &::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: 30%;
-    content: '';
     background-color: $color-sapphire;
     height: 1px;
     display: block;
@@ -52,10 +53,10 @@
   }
 
   &::after {
+    content: "";
     position: absolute;
     top: 50%;
     left: 30%;
-    content: '';
     transform: rotate(90deg);
     background-color: $color-sapphire;
     height: 1px;
@@ -81,28 +82,28 @@
   &:focus {
     background-color: $color-sapphire;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       background-color: $color-default-white;
     }
   }
 }
 
 .accordion__element.is-active .accordion__button-icon {
-  background:  $color-sapphire;
+  background: $color-sapphire;
 
-  &:before {
+  &::before {
     background: $color-default-white;
   }
 
-  &:after {
+  &::after {
     display: none;
   }
 }
 
 .accordion__element.is--disabled .accordion__button-icon {
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     opacity: 30%;
     pointer-events: none;
     cursor: default;
@@ -122,10 +123,10 @@
 
 .accordion__text {
   max-width: 660px;
-  margin: 0 0 25px 0;
+  margin: 0 0 10px;
   font-weight: 300;
   font-size: 18px;
-  line-height: 25.2px;
+  line-height: 24px;
 
   @include vp-1279 {
     max-width: 560px;

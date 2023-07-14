@@ -51,8 +51,8 @@
 
 .faq__container {
   display: grid;
-  grid-template-columns: 23.2% 76.8%;
-  gap: 40px;
+  grid-template-columns: 22.2% 76.8%;
+  gap: 43px;
 
   @include vp-1279 {
     grid-template-columns: 1fr;
@@ -63,7 +63,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 
   @include vp-1279 {
     flex-direction: row;

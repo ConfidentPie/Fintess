@@ -81,7 +81,7 @@
 .promo__item-description {
   display: flex;
   flex-direction: column;
-  padding: 45px;
+  padding: 34px 45px 36px;
   background-color: #ed0233;
   color: $color-default-white;
 
@@ -92,17 +92,17 @@
 }
 
 .promo__item-description h3 {
-  margin: 0 0 19px 0;
+  margin: 0;
   font-weight: 700;
   font-size: 28px;
   line-height: 43.7px;
 }
 
 .promo__item-price {
-  margin: 0 0 35px 0;
+  margin: 0 0 23px;
   font-weight: 700;
   font-size: 70px;
-  line-height: 109.2px;
+  line-height: 60px;
 }
 
 .promo__item-description p {
@@ -165,7 +165,7 @@
 
 .promo__item-secondary {
   max-width: 560px;
-  padding: 35px;
+  padding: 26px 35px 20px 27px;
   min-height: 211px;
   display: flex;
   flex-direction: column;
@@ -184,7 +184,7 @@
 }
 
 .promo__item-title {
-  margin: 0 0 20px 0;
+  margin: 0 0 8px 0;
   font-weight: 700;
   font-size: 26px;
 }
