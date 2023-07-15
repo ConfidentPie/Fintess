@@ -22,7 +22,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 64px 0 70px;
   }
 }
 
@@ -39,6 +39,7 @@
   }
 
   @include vp-767 {
+    margin: 0 0 11px 0;
     font-size: 32px;
     line-height: 38.4px;
     letter-spacing: 0.96px;
@@ -70,6 +71,7 @@
   }
 
   @include vp-767 {
+    min-width: 289px;
     margin: 0 auto 34px auto;
   }
 }
@@ -94,8 +96,8 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 15%;
+    width: 70%;
     height: 2px;
     background-color: $color-crimson;
     transform: scale(0);
@@ -121,8 +123,7 @@
   }
 
   @include vp-767 {
-    margin: 10px 2% 0;
-    width: 45%;
+    margin: 0;
     padding: 10px 15px 14px 15px;
     font-size: 16px;
     line-height: 24px;
@@ -190,6 +191,12 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 39.6px;
+
+  @include vp-767 {
+    margin: 0 0 9px 0;
+    font-size: 22px;
+    line-height: 24.2px;
+  }
 }
 
 .membership__item p {
@@ -221,10 +228,22 @@
     color: #e8e8e8;
     opacity: 48%;
     z-index: -1;
+
+    @include vp-767 {
+      top: 5px;
+      font-size: 80px;
+      line-height: 120px;
+    }
   }
 
   @include vp-1279 {
     margin: 0 0 34px 0;
+  }
+
+  @include vp-767 {
+    margin: 0 0 46px 0;
+    font-size: 48px;
+    line-height:50px;
   }
 }
 
@@ -242,7 +261,7 @@
   user-select: none;
 
   @include vp-767 {
-    padding: 20px 10px;
+    padding: 22px 42px;
   }
 
   @include hover-focus {

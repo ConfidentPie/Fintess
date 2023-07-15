@@ -8,18 +8,26 @@
 }
 
 .accordion__button {
+  margin: 0;
+  padding-right: 42px;
+  padding: 32px 0 31px;
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  margin: 0;
-  padding: 32px 0 31px;
   line-height: 28.8px;
   position: relative;
   background: transparent;
+
+  @include vp-1279 {
+    padding-right: 42px;
+  }
+
+  @include vp-767 {
+    padding-right: 32px;
+  }
 }
 
 .accordion__button span:first-child {
-  padding-right: 42px;
   margin: 0;
   color: $color-sapphire;
   font-size: 24px;
@@ -27,9 +35,6 @@
   text-align: left;
   text-transform: none;
 
-  @include vp-1279 {
-    padding-right: 32px;
-  }
 }
 
 .accordion__button-icon {

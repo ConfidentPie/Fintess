@@ -10,7 +10,7 @@
 
 
   @include vp-1279 {
-    padding: 100px 0;
+    padding: 100px 0 84px;
   }
 
   @include vp-767 {
@@ -27,7 +27,7 @@
   letter-spacing: 1.7px;
 
   @include vp-1279 {
-    margin: 0 7px 31px 0;
+    margin: 0 0 40px 0;
     font-size: 42px;
     line-height: 50.4px;
     letter-spacing: 1.3px;
@@ -56,6 +56,7 @@
 
   @include vp-1279 {
     grid-template-columns: 1fr;
+    gap: 37px;
   }
 }
 

@@ -49,7 +49,7 @@
   }
 
   @include vp-767 {
-    margin: 0;
+    margin: 0 0 5px 0;
     font-size: 32px;
     line-height: 38.4px;
     letter-spacing: 1px;
@@ -71,7 +71,7 @@
 
 .about__description-wrapper {
   @include vp-1279 {
-    margin-bottom: 33px;
+    margin-bottom: 0;
   }
 }
 
@@ -90,6 +90,10 @@
 
 .about__description--primary {
   margin: 0 0 8px 0;
+
+  @include vp-1279 {
+    margin: 0 0 33px 0;
+  }
 }
 
 .about__description--secondary {
@@ -139,7 +143,7 @@
   }
 }
 
-.about__image {
+.about__photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -170,8 +174,6 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: auto;
-    min-height: 167px;
     transform: translateX(0);
   }
 }

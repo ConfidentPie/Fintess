@@ -13,7 +13,7 @@
 
   @include vp-1279 {
     margin: 0 auto;
-    padding: 61px 90px;
+    padding: 61px 90px 38px;
   }
 
   @include vp-767 {
@@ -32,7 +32,7 @@
   letter-spacing: 1.5px;
 
   @include vp-1279 {
-    margin: 0 0 32px 1px;
+    margin: 0 0 35px 0;
     font-size: 42px;
     line-height: 50.4px;
     letter-spacing: 1.2px;
@@ -58,7 +58,7 @@
 
   @include vp-1279 {
     font-size: 18px;
-    line-height: 27.4px;
+    line-height: 39.4px;
   }
 }
 
@@ -84,9 +84,9 @@
     gap: 96px;
 
     &::before {
-      top: 8px;
-      left: 245px;
-      height: 88%;
+      top: 6px;
+      left: 266px;
+      height: 77%;
     }
   }
 
@@ -120,4 +120,8 @@
   margin: 0;
   font-size: 16px;
   line-height: 25px;
+
+  @include vp-1279 {
+    font-size: 20px;
+  }
 }
