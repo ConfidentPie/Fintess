@@ -14,7 +14,7 @@
 .membership__wrapper {
   margin: 0 auto;
   text-align: center;
-  padding: 120px 0;
+  padding: 128px 0 120px;
   max-width: 1160px;
 
   @include vp-1279 {
@@ -22,16 +22,16 @@
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 64px 0 70px;
   }
 }
 
 .membership__title {
-  margin: 0 0 25px 0;
+  margin: 0 0 14px 0;
   font-family: $ff-alumni-sans;
   font-size: 52px;
   line-height: 50.4px;
-  letter-spacing: 1.5px;
+  letter-spacing: 2.5px;
 
   @include vp-1279 {
     font-size: 42px;
@@ -39,6 +39,7 @@
   }
 
   @include vp-767 {
+    margin: 0 0 11px 0;
     font-size: 32px;
     line-height: 38.4px;
     letter-spacing: 0.96px;
@@ -70,6 +71,7 @@
   }
 
   @include vp-767 {
+    min-width: 289px;
     margin: 0 auto 34px auto;
   }
 }
@@ -94,8 +96,8 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 15%;
+    width: 70%;
     height: 2px;
     background-color: $color-crimson;
     transform: scale(0);
@@ -115,14 +117,13 @@
   }
 
   @include vp-1279 {
-    padding: 10px 20px 13px 20px;
+    padding: 6px 0 14px;
     font-size: 18px;
     line-height: 27px;
   }
 
   @include vp-767 {
-    margin: 10px 2% 0;
-    width: 45%;
+    margin: 0;
     padding: 10px 15px 14px 15px;
     font-size: 16px;
     line-height: 24px;
@@ -176,20 +177,30 @@
     border-image-slice: 7;
   }
 
+  @include vp-1279 {
+    padding: 50px 20px 58px;
+  }
+
   @include vp-767 {
     padding: 44px 20px 49px 20px;
   }
 }
 
 .membership__item h3 {
-  margin: 0 0 22px 0;
+  margin: 0 0 3px 0;
   font-weight: 700;
   font-size: 26px;
   line-height: 39.6px;
+
+  @include vp-767 {
+    margin: 0 0 9px 0;
+    font-size: 22px;
+    line-height: 24.2px;
+  }
 }
 
 .membership__item p {
-  margin: 0 0 96px 0;
+  margin: 0 0 66px 0;
 }
 
 .membership__price {
@@ -198,7 +209,7 @@
 }
 
 .membership__price p {
-  margin: 0 0 60px 0;
+  margin: 0 0 33px 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
@@ -217,6 +228,22 @@
     color: #e8e8e8;
     opacity: 48%;
     z-index: -1;
+
+    @include vp-767 {
+      top: 5px;
+      font-size: 80px;
+      line-height: 120px;
+    }
+  }
+
+  @include vp-1279 {
+    margin: 0 0 34px 0;
+  }
+
+  @include vp-767 {
+    margin: 0 0 46px 0;
+    font-size: 48px;
+    line-height:50px;
   }
 }
 
@@ -234,7 +261,7 @@
   user-select: none;
 
   @include vp-767 {
-    padding: 20px 10px;
+    padding: 22px 42px;
   }
 
   @include hover-focus {
@@ -270,13 +297,13 @@
 
 .membership img {
   position: absolute;
-  bottom: -181px;
+  bottom: -180px;
   right: 0;
 
   @include vp-1279 {
-    bottom: -125px;
-    right: 10px;
-    width: 289px;
-    height: 345px;
+    bottom: -123px;
+    right: -77px;
+    width: 426px;
+    height: 442px;
   }
 }

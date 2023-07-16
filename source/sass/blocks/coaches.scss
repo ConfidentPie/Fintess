@@ -5,11 +5,11 @@
   max-width: 1160px;
 
   @include vp-1279 {
-    padding: 100px 0;
+    padding: 45px 0 99px;
   }
 
   @include vp-767 {
-    padding: 33px 0 70px 0;
+    padding: 29px 0 70px 0;
   }
 }
 
@@ -22,7 +22,7 @@
   letter-spacing: 1.7px;
 
   @include vp-1279 {
-    margin: 0 7px 31px 0;
+    margin: 0 0 31px 0;
     font-size: 42px;
     line-height: 50.4px;
     letter-spacing: 1.3px;
@@ -30,7 +30,7 @@
   }
 
   @include vp-767 {
-    margin: 0 5px 42px 0;
+    margin: 0 0 42px 0;
     font-size: 32px;
     line-height: 38.4px;
     letter-spacing: 1px;
@@ -63,13 +63,13 @@
   @include vp-1279 {
     min-width: 268px;
     min-height: 294px;
-    aspect-ratio: 268/294;
+    aspect-ratio: 274/294;
   }
 
   @include vp-767 {
     min-width: 226px;
     min-height: 274px;
-    aspect-ratio: 226/274;
+    aspect-ratio: 230/274;
   }
 }
 
@@ -168,21 +168,26 @@
   }
 
   @include vp-1279 {
-    top: 55%;
+    top: 47%;
   }
 
 
   @include vp-767 {
-    top: 51%;
+    top: 52%;
     width: 10px;
     height: 19px;
 
     @include hover-focus {
       border: none;
     }
+
+    &:active {
+      background-color: transparent;
+    }
   }
 
   &--next {
+    vertical-align: middle;
     right: -60px;
 
     @include vp-1279 {
@@ -190,11 +195,12 @@
     }
 
     @include vp-767 {
-      right: 10px;
+      right: 3px;
     }
   }
 
   &--prev {
+    vertical-align: middle;
     left: -60px;
     transform: rotate(180deg);
 
@@ -203,16 +209,15 @@
     }
 
     @include vp-767 {
-      left: 10px;
+      left: 3px;
     }
   }
 }
 
 .coaches__button svg {
+  position: absolute;
+  top: 75%;
+  left: 58%;
+  transform: translate(-50%, -50%);
   vertical-align: middle;
-
-  @include vp-767 {
-    width: 10px;
-    height: 19px;
-  }
 }

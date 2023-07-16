@@ -2,8 +2,8 @@
   max-width: 1160px;
   display: flex;
   margin: 0 auto;
-  padding: 120px 0;
-  gap: 85px;
+  padding: 120px 0 125px;
+  gap: 90px;
 
   @include vp-1279 {
     flex-direction: column;
@@ -20,8 +20,8 @@
 }
 
 .about__text-block {
-  max-width: 355px;
-  padding-top: 39px;
+  max-width: 410px;
+  padding: 39px 0 0 60px;
 
   @include vp-1279 {
     padding: 0;
@@ -35,21 +35,21 @@
 }
 
 .about__title {
-  margin: 0 0 25px 0;
+  margin: 0 0 8px 0;
   font-family: $ff-alumni-sans;
   font-size: 48px;
-  letter-spacing: 3%;
+  letter-spacing: 1.2px;
   line-height: 58px;
 
   @include vp-1279 {
-    margin: 0 15px 0 0;
+    margin: 0;
     font-size: 42px;
     line-height: 51px;
     letter-spacing: 1.4px;
   }
 
   @include vp-767 {
-    margin: 0;
+    margin: 0 0 5px 0;
     font-size: 32px;
     line-height: 38.4px;
     letter-spacing: 1px;
@@ -57,7 +57,7 @@
 }
 
 .about__feature {
-  margin: 0 0 55px 0;
+  margin: 0 0 40px 0;
   font-size: 18px;
 
   @include vp-1279 {
@@ -71,7 +71,7 @@
 
 .about__description-wrapper {
   @include vp-1279 {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -79,25 +79,26 @@
   font-weight: 300;
 
   @include vp-1279 {
-    max-width: 502px;
-  }
-
-  @media (min-width: 768px) and (max-width: 1199px) {
-    max-width: 502px;
+    max-width: 507px;
   }
 
   @include vp-767 {
     margin: 0 0 8px 0;
     max-width: 258px;
-    max-width: 100%;
   }
 }
 
 .about__description--primary {
-  margin-top: 0;
+  margin: 0 0 8px 0;
+
+  @include vp-1279 {
+    margin: 0 0 33px 0;
+  }
 }
 
 .about__description--secondary {
+  margin: 0 0 0 0;
+
   @include vp-1279 {
     display: none;
   }
@@ -142,7 +143,7 @@
   }
 }
 
-.about__image {
+.about__photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -173,8 +174,6 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: auto;
-    min-height: 167px;
     transform: translateX(0);
   }
 }

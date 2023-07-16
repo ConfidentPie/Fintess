@@ -1,15 +1,15 @@
 .reviews__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 67px 0 120px 0;
+  padding: 120px 0 120px 0;
   max-width: 672px;
 
   @include vp-1279 {
-    padding: 42px 0 100px 0;
+    padding: 92px 0 100px 0;
   }
 
   @include vp-767 {
-    padding: 23px 0 70px 0;
+    padding: 63px 0 72px 0;
   }
 }
 
@@ -23,7 +23,7 @@
   text-align: center;
 
   @include vp-1279 {
-    margin: 0 0 50px 0;
+    margin: 0 0 41px 0;
     font-size: 42px;
     line-height: 50.4px;
     letter-spacing: 1.5px;
@@ -45,7 +45,7 @@
 
   @include vp-767 {
     min-width: 226px;
-    margin: 0 22px;
+    margin: 0 32px;
   }
 }
 
@@ -58,24 +58,25 @@
 .reviews__item {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: 25px auto;
-  gap: 25px 28px;
+  grid-template-rows: 23px auto;
+  gap: 10px 28px;
   margin: 0 auto;
-  padding: 62px;
+  padding: 62px 62px 57px 62px;
   max-width: 560px;
+  height: auto;
   min-height: 242px;
   background-color: $color-resolution-blue;
   color: $color-default-white;
 
   @include vp-1279 {
     max-width: 566px;
-    padding: 62px 65px 55px;
+    padding: 62px 65px 55px 65px;
   }
 
   @include vp-767 {
     grid-template-rows: 68px auto;
     gap: 14px 15px;
-    padding: 40px 25px 33px;
+    padding: 40px 25px 33px 25px;
   }
 }
 
@@ -89,7 +90,7 @@
 
   @include vp-767 {
     grid-row: 1/2;
-    margin: 0;
+    margin: 0 0 0 16px;
     width: 68px;
     height: 68px;
   }
@@ -107,9 +108,10 @@
   margin: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 18px;
 
   @include vp-767 {
+    margin: 10px 0 0 0;
     line-height: 25.7px;
   }
 }
@@ -132,7 +134,6 @@
 
 .reviews__button {
   position: absolute;
-  top: 50%;
   width: 56px;
   height: 56px;
   border: none;
@@ -171,6 +172,7 @@
   }
 
   &--next {
+    top: 55%;
     right: -10px;
 
     @include vp-767 {
@@ -179,8 +181,10 @@
   }
 
   &--prev {
+    top: 53%;
     left: -10px;
     transform: rotate(180deg);
+    align-items: center;
 
     @include vp-767 {
       left: 0;
@@ -189,7 +193,8 @@
 }
 
 .reviews__button svg {
-  vertical-align: middle;
+  width: 16px;
+  height: 32px;
 
   @include vp-767 {
     width: 10px;
