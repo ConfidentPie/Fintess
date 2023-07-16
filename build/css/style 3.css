@@ -2449,7 +2449,7 @@ button,
 @media (max-width: 767px) {
   .header__hero-wrapper {
     max-width: 100%;
-    gap: 20px 0;
+    gap: 22px 0;
     margin: 0;
   }
 }
@@ -2466,6 +2466,7 @@ button,
   .header__hero-title {
     -ms-grid-column-align: start;
         justify-self: start;
+    max-width: 189px;
   }
 }
 
@@ -2488,10 +2489,10 @@ button,
 }
 @media (max-width: 767px) {
   .header__hero-title p {
-    margin: 0 3px 14px 0;
+    margin: 0 0 12px 0;
     font-size: 28px;
     line-height: 33.6px;
-    letter-spacing: 1.1px;
+    letter-spacing: 1px;
   }
 }
 
@@ -2511,7 +2512,7 @@ button,
     padding: 0 0 5px 0;
     font-size: 72px;
     line-height: 86.4px;
-    letter-spacing: 4px;
+    letter-spacing: 3.4px;
     text-transform: none;
     -webkit-text-stroke: 4px #ffffff;
   }
@@ -2572,7 +2573,7 @@ button,
   .header__hero-list {
     -ms-grid-column-align: end;
         justify-self: end;
-    margin: 0 -11px 35px 0;
+    margin: 0 -11px 33px 0;
   }
 }
 
@@ -2975,7 +2976,7 @@ button,
 }
 @media (max-width: 767px) {
   .about__description-wrapper p {
-    margin: 0 0 9px 0;
+    margin: 0 0 8px 0;
     max-width: 258px;
   }
 }
@@ -3179,7 +3180,7 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 71.5px 0 35px 0;
+    padding: 70px 0 35px 0;
   }
 }
 
@@ -3198,7 +3199,7 @@ button,
   .event__content-wrapper {
     width: 100%;
     max-width: 100%;
-    padding: 50px 43px 50px 43px;
+    padding: 50px 43px 51px 43px;
   }
 }
 
@@ -3222,7 +3223,6 @@ button,
   .event__main-content {
     margin: 0 auto 1px auto;
     max-width: 100%;
-    gap: 4px 30px;
   }
 }
 
@@ -3732,7 +3732,7 @@ button,
 }
 @media (max-width: 767px) {
   .membership__price p {
-    margin: 0 0 45px 0;
+    margin: 0 0 46px 0;
     font-size: 48px;
     line-height: 50px;
   }
@@ -3824,7 +3824,7 @@ button,
 }
 @media (max-width: 767px) {
   .coaches__wrapper {
-    padding: 28px 0 70px 0;
+    padding: 29px 0 70px 0;
   }
 }
 
@@ -4997,7 +4997,7 @@ button,
 @media (max-width: 767px) {
   .reviews__title {
     font-size: 32px;
-    line-height: 38px;
+    line-height: 38.5px;
     letter-spacing: 1.1px;
   }
 }
