@@ -1214,6 +1214,7 @@ button.swiper-pagination-bullet {
 
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -3538,8 +3539,7 @@ button,
 }
 
 .membership__control {
-  margin: 0 20px;
-  padding: 10px 0 12px;
+  padding: 10px 20px 12px;
   min-width: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -3799,8 +3799,8 @@ button,
 
 .membership img {
   position: absolute;
-  bottom: -180px;
-  right: 0;
+  bottom: -145px;
+  right: -183px;
 }
 @media (max-width: 1279px) {
   .membership img {
