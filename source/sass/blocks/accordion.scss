@@ -19,11 +19,11 @@
   background: transparent;
 
   @include vp-1279 {
-    padding-right: 42px;
+    padding-right: 52px;
   }
 
   @include vp-767 {
-    padding-right: 32px;
+    padding: 21px 52px 21px 0;
   }
 }
 
@@ -35,7 +35,12 @@
   text-align: left;
   text-transform: none;
 
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 21.5px;
+  }
 }
+
 
 .accordion__button-icon {
   position: absolute;
@@ -74,12 +79,14 @@
   }
 
   @include vp-767 {
+    top: 36px;
     width: 32px;
     height: 32px;
 
     &::before,
     &::after {
-      left: 23%;
+      left: 29%;
+      width: 13px;
     }
   }
 
@@ -139,5 +146,7 @@
 
   @include vp-767 {
     max-width: 290px;
+    font-size: 16px;
+  line-height: 22px;
   }
 }
