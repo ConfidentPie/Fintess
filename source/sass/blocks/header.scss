@@ -124,7 +124,7 @@
   }
 
   @include vp-767 {
-   max-width: 100%;
+    max-width: 100%;
     gap: 22px 0;
     margin: 0;
   }
@@ -221,7 +221,6 @@
 
   @include vp-1279 {
     margin: 0 -1px 25px 0;
-
   }
 
   @include vp-767 {
