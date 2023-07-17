@@ -188,7 +188,7 @@
 
   &--next {
     vertical-align: middle;
-    right: -60px;
+    right: -76px;
 
     @include vp-1279 {
       right: -20px;
@@ -201,7 +201,7 @@
 
   &--prev {
     vertical-align: middle;
-    left: -60px;
+    left: -76px;
     transform: rotate(180deg);
 
     @include vp-1279 {
@@ -216,8 +216,7 @@
 
 .coaches__button svg {
   position: absolute;
-  top: 75%;
-  left: 58%;
+  top: 60%;
+  left: 45%;
   transform: translate(-50%, -50%);
-  vertical-align: middle;
 }

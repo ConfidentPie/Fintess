@@ -4033,7 +4033,7 @@ button,
 }
 .coaches__button--next {
   vertical-align: middle;
-  right: -60px;
+  right: -76px;
 }
 @media (max-width: 1279px) {
   .coaches__button--next {
@@ -4047,7 +4047,7 @@ button,
 }
 .coaches__button--prev {
   vertical-align: middle;
-  left: -60px;
+  left: -76px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -4065,12 +4065,11 @@ button,
 
 .coaches__button svg {
   position: absolute;
-  top: 75%;
-  left: 58%;
+  top: 60%;
+  left: 45%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  vertical-align: middle;
 }
 
 .features {
@@ -5121,13 +5120,13 @@ button,
 
 .reviews__button {
   position: absolute;
+  top: 54%;
   width: 56px;
   height: 56px;
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
   cursor: pointer;
-  color: #102654;
 }
 @media (hover: hover) {
   .reviews__button:hover:not(.focus-visible) {
@@ -5151,11 +5150,12 @@ button,
 }
 @media (max-width: 1279px) {
   .reviews__button {
-    top: 49%;
+    top: 52.5%;
   }
 }
 @media (max-width: 767px) {
   .reviews__button {
+    top: 54.5%;
     width: 10px;
     height: 19px;
   }
@@ -5171,23 +5171,29 @@ button,
   }
 }
 .reviews__button--next {
-  top: 55%;
-  right: -10px;
+  right: -17px;
+}
+@media (max-width: 1279px) {
+  .reviews__button--next {
+    right: -22px;
+  }
 }
 @media (max-width: 767px) {
   .reviews__button--next {
+    top: 55.5%;
     right: 0;
   }
 }
 .reviews__button--prev {
-  top: 53%;
-  left: -10px;
+  left: -17px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+@media (max-width: 1279px) {
+  .reviews__button--prev {
+    left: -22px;
+  }
 }
 @media (max-width: 767px) {
   .reviews__button--prev {
@@ -5196,14 +5202,12 @@ button,
 }
 
 .reviews__button svg {
-  width: 16px;
-  height: 32px;
-}
-@media (max-width: 767px) {
-  .reviews__button svg {
-    width: 10px;
-    height: 19px;
-  }
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .free-visit {
