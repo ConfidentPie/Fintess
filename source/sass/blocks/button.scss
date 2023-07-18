@@ -10,6 +10,7 @@
   color: $color-default-white;
   border: 4px solid $color-default-white;
   user-select: none;
+  cursor: pointer;
 
   @include hover-focus {
     background-color: $color-default-white;
