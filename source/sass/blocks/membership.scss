@@ -17,12 +17,40 @@
   padding: 128px 0 120px;
   max-width: 1160px;
 
+&::after {
+  position: absolute;
+    content: "";
+    background-image: url("../../img/decor/membership-decor-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: -37px -82px;
+    bottom: -191px;
+    right: 0;
+    width: 250px;
+    height: 450px;
+}
+
   @include vp-1279 {
     padding: 100px 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/decor/membership-decor-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: -27px 0;
+      bottom: -81px;
+      right: 0;
+      width: 320px;
+      height: 400px;
+    }
   }
 
   @include vp-767 {
     padding: 64px 0 70px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
