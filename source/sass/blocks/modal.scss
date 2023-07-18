@@ -83,6 +83,11 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+
+    @include vp-767 {
+      top: 5px;
+      right: 3px ;
+    }
   }
 
   &--responsive {

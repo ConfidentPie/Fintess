@@ -15,7 +15,7 @@ const initSliderCoaches = () => {
       loop: true,
 
       breakpoints: {
-        1200: {
+        1279: {
           slidesPerView: 4,
           spaceBetween: 40,
         },
