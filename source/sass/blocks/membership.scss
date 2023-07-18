@@ -277,6 +277,7 @@
 
 .membership__button {
   display: inline-block;
+  width: 100%;
   padding: 27px 44px 28px;
   font-weight: 700;
   font-size: 12px;
@@ -289,6 +290,7 @@
   user-select: none;
 
   @include vp-767 {
+    width: 86%;
     padding: 22px 42px;
   }
 
