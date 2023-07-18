@@ -34,4 +34,4 @@ const initSliderCoaches = () => {
   }
 };
 
-export { initSliderCoaches };
+export {initSliderCoaches};
