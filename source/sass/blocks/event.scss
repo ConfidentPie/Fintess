@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
 
-  @include vp-1279 {
+  @include vp-1199 {
     padding: 99px 0 56px 0;
     max-width: 994px;
   }
@@ -22,7 +22,7 @@
   background-color: #ed0233;
   color: $color-default-white;
 
-  @include vp-1279 {
+  @include vp-1199 {
     padding: 51px 45px 44px 45px;
   }
 
@@ -40,7 +40,7 @@
   margin: 0 0 10px 0;
   max-width: 343px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     gap: 1px 30px;
     margin: 0;
     max-width: 202px;
@@ -65,7 +65,7 @@
   line-height: 96%;
   text-transform: uppercase;
 
-  @include vp-1279 {
+  @include vp-1199 {
     font-size: 72px;
     line-height: 68px;
   }
@@ -117,7 +117,7 @@
     background-color: $color-default-white;
   }
 
-  @include vp-1279 {
+  @include vp-1199 {
     font-size: 16px;
     line-height: 24px;
 
@@ -145,7 +145,7 @@
   font-size: 40px;
   line-height: 60px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     font-size: 24px;
     line-height: 36px;
   }
@@ -164,7 +164,7 @@
   font-size: 14px;
   line-height: 17px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     font-size: 12px;
     line-height: 15px;
   }
@@ -182,7 +182,7 @@
   font-size: 18px;
   line-height: 27px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     margin: 0;
     font-size: 16px;
     line-height: 24px;
@@ -217,7 +217,7 @@
   min-height: 500px;
   background-color: $color-dark-cerulian;
 
-  @include vp-1279 {
+  @include vp-1199 {
     min-height: 451px;
   }
 

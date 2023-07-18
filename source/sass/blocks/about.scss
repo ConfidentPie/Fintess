@@ -5,7 +5,7 @@
   padding: 120px 0 125px;
   gap: 90px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     flex-direction: column;
     gap: 11px;
     align-items: center;
@@ -23,7 +23,7 @@
   max-width: 410px;
   padding: 39px 0 0 60px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     padding: 0;
     max-width: 900px;
     text-align: center;
@@ -41,7 +41,7 @@
   letter-spacing: 1.2px;
   line-height: 58px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     margin: 0;
     font-size: 42px;
     line-height: 51px;
@@ -70,7 +70,7 @@
 }
 
 .about__description-wrapper {
-  @include vp-1279 {
+  @include vp-1199 {
     margin-bottom: 0;
   }
 }
@@ -78,7 +78,7 @@
 .about__description-wrapper p {
   font-weight: 300;
 
-  @include vp-1279 {
+  @include vp-1199 {
     max-width: 507px;
   }
 
@@ -91,7 +91,7 @@
 .about__description--primary {
   margin: 0 0 8px 0;
 
-  @include vp-1279 {
+  @include vp-1199 {
     margin: 0 0 33px 0;
   }
 }
@@ -99,7 +99,7 @@
 .about__description--secondary {
   margin: 0 0 0 0;
 
-  @include vp-1279 {
+  @include vp-1199 {
     display: none;
   }
 }
@@ -110,7 +110,7 @@
   min-height: 511px;
   position: relative;
 
-  @include vp-1279 {
+  @include vp-1199 {
     padding: 0 0 110px 0;
     max-width: 100%;
     min-height: 0;
@@ -128,7 +128,7 @@
   width: 100%;
   background-color: $color-grey;
 
-  @include vp-1279 {
+  @include vp-1199 {
     margin: 0 auto;
     width: 678px;
     height: 345px;
@@ -161,7 +161,7 @@
   height: 228px;
   background-color: $color-egyptian-blue;
 
-  @include vp-1279 {
+  @include vp-1199 {
     top: 261px;
     left: 50%;
     transform: translateX(-50%);
@@ -176,6 +176,12 @@
     width: 100%;
     transform: translateX(0);
   }
+}
+
+.about__video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about__video-player {

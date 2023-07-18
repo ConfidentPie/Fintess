@@ -22,7 +22,7 @@
           <div class="header__wrapper">
               <div class="header__nav">
                 <a class="header__logo" href="index.html">
-                  Supergym
+                  <img src="img/logo.svg" width="122" height="44" alt="Логотип SUPERGYM.">
                 </a>
                 <div class="header__contacts">
                   <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
@@ -69,10 +69,10 @@
                 <div class="about__photo">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="./img/about/gym-mobile@1x.webp 1x, ./img/about/gym-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1279px)" srcset="./img/about/gym-tablet@1x.webp 1x, ./img/about/gym-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="./img/about/gym-tablet@1x.webp 1x, ./img/about/gym-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/about/gym-desktop@1x.webp 1x, img/about/gym-desktop@2x.webp 2x">
                     <source media="(max-width: 767px)" srcset="./img/about/gym-mobile@1x.jpg 1x, ./img/about/gym-mobile@2x.jpg 2x">
-                    <source media="(max-width: 1279px)" srcset="./img/about/gym-tablet@1x.jpg 1x, ./img/about/gym-tablet@2x.jpg 2x">
+                    <source media="(max-width: 1199px)" srcset="./img/about/gym-tablet@1x.jpg 1x, ./img/about/gym-tablet@2x.jpg 2x">
                     <img class="about__image" src="./img/about/gym-desktop@1x.jpg" srcset="./img/about/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Фото тренажерного зала.">
                   </picture>
                 </div>
@@ -111,7 +111,7 @@
                       <div class="membership__price">
                         <p data-price="5000">5000 &#8381;</p>
                       </div>
-                      <a class="membership__button is--disabled" href="example.html" data-open-modal="feedback">Купить абонемент</a>
+                      <a class="membership__button" href="example.html" data-open-modal="feedback">Купить абонемент</a>
                     </div>
                     <div class="membership__item" tabindex="0">
                       <h3>Дневной</h3>
@@ -399,7 +399,7 @@
                   </div>
                   <div class="features__item-text">
                     <h3>Площадь</h3>
-                    <p>Занимайтесь без очередей и толпучки</p>
+                    <p>Занимайтесь без очередей и&nbsp;толпучки</p>
                   </div>
                 </li>
                 <li class="features__item">
@@ -451,15 +451,15 @@
                     <h3>Год</h3>
                     <span class="promo__item-price">4999</span>
                     <p class="promo__item-text">Безлимитный абонемент в&nbsp;тренажерный зал</p>
-                    <a class="promo__item-link is--disabled" href="promo1.html" data-open-modal="success">Подробнее</a>
+                    <a class="promo__item-link" href="promo1.html" data-open-modal="success">Подробнее</a>
                   </div>
                   <div class="promo__item-image">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)" srcset="img/promo/pass-mobile@1x.webp, img/promo/pass-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1279px)" srcset="img/promo/pass-tablet@1x.webp, img/promo/pass-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/promo/pass-tablet@1x.webp, img/promo/pass-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="img/promo/pass-desktop@1x.webp, img/promo/pass-desktop@2x.webp 2x">
                       <source media="(max-width: 767px)" srcset="img/promo/pass-mobile@1x.jpg, img/promo/pass-mobile@2x.jpg 2x">
-                      <source media="(max-width: 1279px)" srcset="img/promo/pass-tablet@1x.jpg, img/promo/pass-tablet@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" srcset="img/promo/pass-tablet@1x.jpg, img/promo/pass-tablet@2x.jpg 2x">
                       <img src="img/promo/pass-desktop@1x.jpg" srcset="img/promo/pass-desktop@2x.jpg 2x" width="280" height="462" alt="Спортивная, улыбающаяся девушка в синих спортивных лосинах и топе.">
                     </picture>
                   </div>
@@ -692,12 +692,12 @@
                 <div class="free-visit__form form" data-form-validate="data-form-validate" data-callback="base">
                   <form action="https://echo.htmlacademy.ru" method="post">
                     <div class="form__inputs">
-                      <div class="form-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-required="data-required">
+                      <div class="custom-input is-invalid" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-required="data-required">
                         <label aria-label="Ваше имя.">
                           <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
                         </label>
                       </div>
-                      <div class="form-input" data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
+                      <div class="custom-input is-invalid" data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
                         data-required="data-required">
                         <label aria-label="Ваш номер телефона.">
                           <input type="tel" name="tel" placeholder="Телефон" autocomplete="off" required>
