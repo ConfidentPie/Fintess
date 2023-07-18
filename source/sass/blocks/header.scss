@@ -4,7 +4,7 @@
   background-color: $color-venetian-red;
   color: $color-default-white;
 
-  @include vp-1279 {
+  @include vp-1199 {
     min-height: 554px;
     background: $hero-gradient-mobile;
   }
@@ -17,7 +17,7 @@
 .header .container {
   padding: 0 93px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     padding: 0 35px;
   }
 
@@ -40,7 +40,7 @@
   justify-content: space-between;
   padding: 25px 0 0 0;
 
-  @include vp-1279 {
+  @include vp-1199 {
     margin: 0 0 13px 0;
     padding: 29px 0 0 0;
   }
@@ -60,7 +60,7 @@
     opacity: 80%;
   }
 
-  @include vp-1279 {
+  @include vp-1199 {
 
   }
 
@@ -91,7 +91,7 @@
   letter-spacing: 0.78px;
   color: $color-default-white;
 
-  @include vp-1279 {
+  @include vp-1199 {
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 0.48px;
@@ -117,7 +117,7 @@
   gap: 20px;
   grid-template-columns: 35% 65%;
 
-  @include vp-1279 {
+  @include vp-1199 {
     grid-template-columns: 48% 52%;
     padding: 0 0 80px 0;
     gap: 18px;
@@ -140,7 +140,7 @@
   text-align: end;
   align-self: center;
 
-  @include vp-1279 {
+  @include vp-1199 {
     margin: 27px 2px 0 0;
     padding: 0;
     max-width: 324px;
@@ -172,7 +172,7 @@
   line-height: 57.6px;
   letter-spacing: 1.3px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     margin: 0 3px 7px 0;
     font-size: 34px;
     line-height: 40.8px;
@@ -198,7 +198,7 @@
   text-transform: uppercase;
   -webkit-text-stroke: 5px $color-default-white;
 
-  @include vp-1279 {
+  @include vp-1199 {
     padding: 0 0 5px 0;
     font-size: 72px;
     line-height: 86.4px;
@@ -216,7 +216,7 @@
   margin: 0 -1px 0 12px;
   grid-column: 2/3;
 
-  @include vp-1279 {
+  @include vp-1199 {
     margin-left: 20px;
   }
 
@@ -243,7 +243,7 @@
   font-size: 14px;
   line-height: 21px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     margin: 0 -1px 25px 0;
   }
 
@@ -259,7 +259,7 @@
   height: 556px;
   background-color: $color-egyptian-blue;
 
-  @include vp-1279 {
+  @include vp-1199 {
     max-width: 324px;
     height: 390px;
     margin: 17px 0 0 9px;
@@ -271,7 +271,7 @@
 }
 
 .header__image img {
-  @include vp-1279 {
+  @include vp-1199 {
     width: 324px;
     height: 390px;
   }

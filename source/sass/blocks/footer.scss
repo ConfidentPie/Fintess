@@ -2,7 +2,7 @@
   min-height: 108px;
   background-color: $color-black-russian;
 
-  @include vp-1279 {
+  @include vp-1199 {
     min-height: 114px;
   }
 
@@ -14,7 +14,7 @@
 .footer .container {
   padding: 0 93px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     padding: 0 35px;
   }
 
@@ -33,7 +33,7 @@
   max-width: 1180px;
   color: $color-default-white;
 
-  @include vp-1279 {
+  @include vp-1199 {
     padding: 44px 0 38px 0;
   }
 
@@ -63,7 +63,7 @@
     opacity: 70%;
   }
 
-  @include vp-1279 {
+  @include vp-1199 {
     margin: -7px 0 0 0;
     width: 100px;
     min-width: 100px;
@@ -85,7 +85,7 @@
   padding: 0;
   min-width: 445px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     gap: 10px;
     margin: -8px 0 0 0;
     min-width: 405px;
@@ -150,7 +150,7 @@
   min-width: 90px;
   max-width: 215px;
 
-  @include vp-1279 {
+  @include vp-1199 {
     margin: 0 10px 0 0;
     max-width: 107px;
   }
