@@ -3468,14 +3468,39 @@ button,
   padding: 128px 0 120px;
   max-width: 1160px;
 }
+.membership__wrapper::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/decor/membership-decor-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: -37px -82px;
+  bottom: -191px;
+  right: 0;
+  width: 250px;
+  height: 450px;
+}
 @media (max-width: 1279px) {
   .membership__wrapper {
     padding: 100px 0;
+  }
+  .membership__wrapper::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/decor/membership-decor-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: -27px 0;
+    bottom: -81px;
+    right: 0;
+    width: 320px;
+    height: 400px;
   }
 }
 @media (max-width: 767px) {
   .membership__wrapper {
     padding: 64px 0 70px;
+  }
+  .membership__wrapper::after {
+    display: none;
   }
 }
 
