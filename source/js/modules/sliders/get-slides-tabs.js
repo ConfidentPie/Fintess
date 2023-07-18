@@ -14,4 +14,4 @@ const getSlidesTabs = () => {
   slides.forEach((slide) => slidesObserver.observe(slide));
 };
 
-export { getSlidesTabs };
+export {getSlidesTabs};

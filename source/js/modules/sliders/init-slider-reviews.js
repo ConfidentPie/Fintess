@@ -18,4 +18,4 @@ const initSliderReviews = () => {
   }
 };
 
-export { initSliderReviews };
+export {initSliderReviews};

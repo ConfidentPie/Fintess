@@ -1,13 +1,13 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { Form } from './modules/form-validate/form';
-import { initVideoPlayer } from './modules/init-video-player';
-import { initModals } from './modules/modals/init-modals';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {Form} from './modules/form-validate/form';
+import {initVideoPlayer} from './modules/init-video-player';
+import {initModals} from './modules/modals/init-modals';
 
-import { initTabs } from './modules/tabs/init-tabs';
-import { getSlidesTabs } from './modules/sliders/get-slides-tabs';
-import { initSliderCoaches } from './modules/sliders/init-slider-coaches';
-import { initSliderReviews } from './modules/sliders/init-slider-reviews';
-import { initAccordions } from './modules/init-accordion';
+import {initTabs} from './modules/tabs/init-tabs';
+import {getSlidesTabs} from './modules/sliders/get-slides-tabs';
+import {initSliderCoaches} from './modules/sliders/init-slider-coaches';
+import {initSliderReviews} from './modules/sliders/init-slider-reviews';
+import {initAccordions} from './modules/init-accordion';
 
 // ---------------------------------
 
