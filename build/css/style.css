@@ -2211,13 +2211,9 @@ button,
 }
 
 .header__wrapper {
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0;
-}
-@media (max-width: 767px) {
-  .header__wrapper {
-    padding: 15px 0 0;
-  }
 }
 
 .header__nav {
@@ -2252,6 +2248,20 @@ button,
     opacity: 80%;
   }
 }
+@media (max-width: 1199px) {
+  .header__logo {
+    margin: 2px 0 0;
+    width: 101px;
+    min-width: 101px;
+  }
+}
+@media (max-width: 767px) {
+  .header__logo {
+    width: 87px;
+    min-width: 87px;
+  }
+}
+
 .header__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2291,14 +2301,13 @@ button,
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 0.48px;
-    line-height: 28.8px;
   }
 }
 @media (max-width: 767px) {
   .header__phone {
     font-weight: 600;
     font-size: 20px;
-    letter-spacing: 2%;
+    letter-spacing: 0.34px;
   }
 }
 @media (hover: hover) {
@@ -2322,7 +2331,6 @@ button,
     -ms-grid-columns: 48% 52%;
     grid-template-columns: 48% 52%;
     padding: 0 0 80px 0;
-    gap: 18px;
   }
 }
 @media (max-width: 767px) {
@@ -2352,15 +2360,22 @@ button,
   .header__hero-wrapper {
     margin: 27px 2px 0 0;
     padding: 0;
-    max-width: 324px;
+    max-width: 373px;
     gap: 35px 0;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .header__hero-wrapper {
+    -ms-grid-columns: 45% 55%;
+    grid-template-columns: 45% 55%;
   }
 }
 @media (max-width: 767px) {
   .header__hero-wrapper {
-    max-width: 100%;
-    gap: 20px 0;
-    margin: 0;
+    max-width: 737px;
+    width: calc(100% - 20px);
+    gap: 22px 0;
+    margin: 0 10px;
   }
 }
 
@@ -2374,6 +2389,7 @@ button,
 }
 @media (max-width: 767px) {
   .header__hero-title {
+    max-width: 189px;
     -ms-grid-column-align: start;
         justify-self: start;
   }
@@ -5182,7 +5198,7 @@ button,
 }
 
 .free-visit__wrapper {
-  margin: 0 auto;
+  margin: 0 0 0 auto;
   max-width: 683px;
   padding: 63px 170px 67px 103px;
 }
@@ -5238,7 +5254,7 @@ button,
 
 .contacts__wrapper {
   max-width: 683px;
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   padding: 56px 159px 43px 120px;
 }
 @media (max-width: 1199px) {
