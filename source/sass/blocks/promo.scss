@@ -243,6 +243,11 @@
     outline: solid 1px $color-default-white;
   }
 
+  &:active {
+    -webkit-text-stroke: 0.5px $color-resolution-blue;
+
+  }
+
   &::before {
     content: "";
     position: absolute;

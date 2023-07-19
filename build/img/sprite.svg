@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow" viewBox="0 0 16 32"><g fill="none">
-<path d="M6 1L16 11L6 21" stroke="#102654"/>
+<path d="M6 1L16 11L6 21" stroke="currentColor"/>
 </g></symbol><symbol id="icon-close" viewBox="0 0 20 20"><g fill="currenColor"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></g></symbol><symbol id="minus" viewBox="0 0 20 2"><g fill="none">
 <path d="M20 1H10H0" stroke="#102654"/>
 </g></symbol><symbol id="next" viewBox="0 0 18 34"><g fill="none">

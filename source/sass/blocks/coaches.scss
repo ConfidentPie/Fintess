@@ -177,8 +177,8 @@
   background-repeat: no-repeat;
   cursor: pointer;
 
-  @include hover-focus {
-    opacity: 50%;
+  &:hover,
+  &:focus {
     border-radius: 50%;
     border: 1px solid $color-sapphire;
   }
@@ -211,6 +211,10 @@
     vertical-align: middle;
     right: -76px;
 
+    &:active svg {
+      color: #fff;
+    }
+
     @include vp-1199 {
       right: -20px;
     }
@@ -224,6 +228,10 @@
     vertical-align: middle;
     left: -76px;
     transform: rotate(180deg);
+
+    &:active svg {
+      color: #fff;
+    }
 
     @include vp-1279 {
       left: -20px;
