@@ -14,11 +14,13 @@
   @include hover-focus {
     background-color: $color-default-white;
     color: $color-egyptian-blue;
+    font-weight: 700;
   }
 
   &:active {
     background-color: $color-default-white;
     color: $color-sapphire;
+    font-weight: 700;
   }
 
   @include vp-767 {

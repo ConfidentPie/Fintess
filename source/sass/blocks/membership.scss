@@ -133,14 +133,24 @@
   }
 
   @include hover {
-    color: $color-crimson;
+    color: $color-sapphire;
     opacity: 100%;
+
+    &::before {
+      transition: 0s;
+      transform: scale(1);
+    }
   }
 
   &:active,
   &:focus {
-    color: $color-crimson;
+    color: $color-sapphire;
     opacity: 100%;
+
+    &::before {
+      transition: 0s;
+      transform: scale(1);
+    }
   }
 
   @include vp-1199 {
@@ -286,7 +296,7 @@
   text-transform: uppercase;
   text-align: center;
   color: $color-sapphire;
-  outline: 2px solid $color-sapphire-faq;
+  outline: 2px solid $color-sapphire;
   user-select: none;
 
   @include vp-1199 {
@@ -299,14 +309,21 @@
     padding: 22px 42px;
   }
 
-  @include hover-focus {
-    color: $color-sapphire;
-    outline-color: $color-sapphire;
+  @include hover {
+    color: $color-default-white;
+    background: $button-buy-gradient;
+    outline-color: transparent;
+  }
+
+  &:focus {
+    color: $color-default-white;
+    background: $button-buy-gradient;
+    outline-color: transparent;
   }
 
   &:active {
     background: $button-buy-gradient;
-    color: $color-default-white;
+    color: $color-default-white-active;
     outline-color: transparent;
   }
 }

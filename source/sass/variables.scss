@@ -4,7 +4,7 @@
 // Default
 
 $color-default-black:               #000000;
-$color-default-white:               #ffffff;
+$color-default-white:               rgb(255, 255, 255);
 $color-transparent:                 rgba(255, 255, 255, 0);
 
 // Project palette
@@ -28,13 +28,14 @@ $color-light-slate-grey:            #74819c;
 $color-spindle:                     #b6bdcc;
 $color-sapphire-coaches:            rgb(16, 38, 84, 0.89);
 $color-sapphire-faq:                rgb(16, 38, 84, 0.2);
+$color-default-white-active:        rgba(255, 255, 255, 0.6);
 
 
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $button-buy-gradient:               linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-$numbers-gradient:                   linear-gradient(142.51deg, #d10a42 0%, #0041ca 75%);
+$numbers-gradient:                  linear-gradient(142.51deg, #d10a42 0%, #0041ca 75%);
 $border-gradient:                   linear-gradient(148deg, $color-crimson 0%, $color-smalt 100%);
 $features-gradient:                 linear-gradient(142deg, $color-crimson 0%, $color-cobalt 75%);
 $hero-gradient-desktop:             conic-gradient(from 130deg at 16.03% 39.06%, $color-venetian-red -46deg, $color-dark-cerulian 32deg, $color-venetian-red 313deg, $color-dark-cerulian 392deg);
