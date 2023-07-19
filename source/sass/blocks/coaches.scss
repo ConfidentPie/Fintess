@@ -198,7 +198,8 @@
     width: 10px;
     height: 19px;
 
-    @include hover-focus {
+    &:hover,
+    &:focus {
       border: none;
     }
 
@@ -252,4 +253,10 @@
   @include vp-767 {
     top: 75%;
   }
+}
+
+.coaches__button.is-disabled {
+  opacity: 30%;
+  pointer-events: none;
+  cursor: default;
 }
