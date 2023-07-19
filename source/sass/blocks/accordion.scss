@@ -52,8 +52,8 @@
   display: flex;
   position: relative;
   background: transparent;
-  border-radius: 21px;
-  outline: 1px solid $color-sapphire;
+  border-radius: 50%;
+  border: 1px solid $color-sapphire;
 
   &::before {
     content: "";
@@ -88,7 +88,7 @@
     padding: 16px;
     width: 32px;
     height: 32px;
-    border-radius: 16px;
+    border-radius: 50%;
 
     &::before,
     &::after {
