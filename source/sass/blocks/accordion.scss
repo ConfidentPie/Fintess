@@ -3,8 +3,29 @@
 }
 
 .accordion__wrapper {
-  margin: 0;
+  margin: 0 0 25px 0;
   padding: 0;
+
+  @include vp-767 {
+    margin: 5px 0 20px;
+  }
+
+}
+
+.accordion__element.is-active .accordion__container {
+  padding: 25px 42px 10px 0;
+
+  @include vp-1199 {
+    padding: 24px 1px 10px;
+  }
+
+  @include vp-767 {
+    padding: 23px 0 10px;
+  }
+}
+
+.accordion__content {
+  max-width: 100%;
 }
 
 .accordion__container {
@@ -24,7 +45,7 @@
   }
 
   @include vp-767 {
-    padding: 23px 0;
+    padding: 20px 0;
   }
 }
 
@@ -173,7 +194,7 @@
   }
 
   @include vp-767 {
-    margin: -3px 0 10px;
+    margin: 0;
     max-width: 290px;
     font-size: 16px;
     line-height: 22px;
