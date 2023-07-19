@@ -4746,12 +4746,12 @@ button,
 }
 @media (max-width: 1199px) {
   .faq__wrapper {
-    padding: 100px 0 93px;
+    padding: 100px 0 101px;
   }
 }
 @media (max-width: 767px) {
   .faq__wrapper {
-    padding: 70px 0 63px;
+    padding: 70px 0 54px;
   }
 }
 
