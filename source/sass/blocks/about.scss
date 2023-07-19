@@ -201,11 +201,11 @@
   height: 72px;
   top: 50%;
   left: 50%;
-  border-radius: 50%;
+  border-radius: 36px;
   text-align: center;
   transform: translate(-50%, -50%);
-  outline: 2px solid rgba($color-torch-red, 0.2);
-  outline-offset: 14px;
+  background: $button-buy-gradient;
+  border: none;
   z-index: 3;
   cursor: pointer;
 
@@ -216,42 +216,41 @@
     bottom: -2px;
     left: -2px;
     right: -2px;
-    background: $button-buy-gradient;
     border-radius: 50%;
     z-index: 1;
   }
 
-  &:focus svg {
-    fill: $color-sapphire;
-  }
-
-  @include focus {
-    outline-color: $color-sapphire;
-  }
-
+  &:hover::before,
   &:focus::before {
-    background: #ffffff;
+    @include hover;
+    background-color: $color-default-white;
   }
 
-  &:disabled {
-    opacity: 0.4;
-    outline-color: $color-sapphire;
+  &:active {
+    background: transparent;
   }
 
-  &:disabled svg {
-    opacity: 0.4;
-    fill: $color-sapphire;
+  &:active::before {
+    top: 50%;
+  left: 50%;
+    transform: translate(-50%, -50%);
+    width: 58px;
+    height: 58px;
+    @include hover;
+    background-color: $color-default-white;
   }
 
-  &:disabled::before {
-    opacity: 0.4;
-    background: $color-default-white;
+  &:hover svg,
+  &:focus svg,
+  &:active svg {
+    @include hover;
+    color: $color-sapphire;
   }
 }
 
 .about__play-button svg {
   position: absolute;
-  fill: $color-default-white;
+  color: $color-default-white;
   top: 50%;
   left: 50%;
   transform: translate(-35%, -50%);
