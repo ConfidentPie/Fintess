@@ -4948,8 +4948,8 @@ button,
   display: flex;
   position: relative;
   background: transparent;
-  border-radius: 21px;
-  outline: 1px solid #102654;
+  border-radius: 50%;
+  border: 1px solid #102654;
 }
 .accordion__button::before {
   content: "";
@@ -4986,7 +4986,7 @@ button,
     padding: 16px;
     width: 32px;
     height: 32px;
-    border-radius: 16px;
+    border-radius: 50%;
   }
   .accordion__button::before, .accordion__button::after {
     left: 29%;
