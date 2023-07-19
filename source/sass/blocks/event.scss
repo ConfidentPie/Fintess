@@ -6,13 +6,17 @@
   justify-content: center;
 
   @include vp-1199 {
-    padding: 99px 0 56px 0;
+    padding: 100px 0 50px 0;
     max-width: 994px;
   }
 
+  @include vp-1023 {
+    padding: 100px 0 50px 0;
+  }
+
   @include vp-767 {
+    padding: 72px 0 30px 0;
     flex-direction: column;
-    padding: 71.5px 0 35px 0;
   }
 }
 
@@ -23,13 +27,18 @@
   color: $color-default-white;
 
   @include vp-1199 {
-    padding: 51px 45px 44px 45px;
+    padding: 75px 59px 75px 58px;
+  }
+
+  @include vp-1023 {
+    padding: 51px 45px 50px 45px;
+    width: 43%;
   }
 
   @include vp-767 {
+    padding: 50px 43px;
     width: 100%;
     max-width: 100%;
-    padding: 50px 43px 50px 43px;
   }
 }
 
@@ -40,16 +49,15 @@
   margin: 0 0 10px 0;
   max-width: 343px;
 
-  @include vp-1199 {
-    gap: 1px 30px;
-    margin: 0;
+  @include vp-1023 {
+    gap: 4px 35px;
+    margin: 0 0 1px 0;
     max-width: 202px;
   }
 
   @include vp-767 {
     margin: 0 auto 1px auto;
     max-width: 100%;
-    gap: 4px 30px;
   }
 }
 
@@ -66,15 +74,16 @@
   text-transform: uppercase;
 
   @include vp-1199 {
+    padding: 0;
     font-size: 72px;
-    line-height: 68px;
+    line-height: 68.7px;
   }
 
   @include vp-1023 {
-    margin: 0;
+    margin: 0 0 0 7px;
     max-width: 120px;
     font-size: 48px;
-    line-height: 46px;
+    line-height: 46.08px;
     letter-spacing: 1.5px;
   }
 }
@@ -93,11 +102,6 @@
     max-width: 56px;
   }
 
-  @include vp-767 {
-    justify-self: end;
-    margin: -4px 2px 0 0;
-    max-width: 56px;
-  }
 }
 
 .event__date dt,
@@ -112,7 +116,7 @@
     position: absolute;
     top: 32px;
     left: 0;
-    width: 70%;
+    width: 95%;
     height: 1px;
     background-color: $color-default-white;
   }
@@ -132,25 +136,24 @@
 
     &::after {
       top: 20px;
-      width: 75%;
+      width: 100%;
     }
   }
 }
 
 .event__date dd,
 .event__time dd {
-  display: flex;
   margin: 0;
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
 
   @include vp-1199 {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 35px;
+    line-height: 50px;
   }
 
-  @include vp-767 {
+  @include vp-1023 {
     font-size: 24px;
     line-height: 35px;
   }
@@ -176,14 +179,30 @@
   }
 }
 
+.event__date dt {
+  &::after {
+    width: 70%;
+  }
+
+  @include vp-1023 {
+    &::after {
+      width: 75%;
+    }
+  }
+}
+
+.event__date dd {
+  display: flex;
+}
+
+
 .event__text {
-  margin: 0 0 44px 0;
+  margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
 
   @include vp-1199 {
-    margin: 0;
     font-size: 16px;
     line-height: 24px;
   }
@@ -192,28 +211,35 @@
     font-size: 12px;
     line-height: 18px;
   }
+
+  @include vp-767 {
+    margin: 0 0 0 1px;
+  }
 }
 
 .event__content-wrapper .button {
+  margin: 45px 0 0 0;
+  padding: 25px 10px 24px 10px;
   width: 100%;
   max-width: 343px;
-  padding: 25px 10px;
 
   @include vp-1023 {
     margin: 30px 0 0 0;
-    padding: 13px 10px;
+    padding: 13px 10px 12px 10px;
     border: 2px solid $color-default-white;
     font-size: 10px;
     line-height: 11.7px;
-    letter-spacing: 5%;
+    letter-spacing: 0.5px;
   }
 
   @include vp-767 {
+    margin: 30px 0 0 0;
     max-width: 100%;
   }
 }
 
 .event__image-wrapper {
+  width: 100%;
   min-height: 500px;
   background-color: $color-dark-cerulian;
 
@@ -232,7 +258,7 @@
   }
 }
 
-.promo__image-wrapper img {
+.event__image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
