@@ -289,6 +289,11 @@
   outline: 2px solid $color-sapphire-faq;
   user-select: none;
 
+  @include vp-1199 {
+    width: 53%;
+    max-width: 100%;
+  }
+
   @include vp-767 {
     width: 86%;
     padding: 22px 42px;
