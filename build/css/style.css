@@ -4914,7 +4914,7 @@ button,
 }
 @media (max-width: 1199px) {
   .accordion__container {
-    padding: 24px 0;
+    padding: 24px 1px;
   }
 }
 @media (max-width: 767px) {
@@ -4976,7 +4976,7 @@ button,
 }
 @media (max-width: 1199px) {
   .accordion__button {
-    right: 2px;
+    right: 0;
   }
 }
 @media (max-width: 767px) {
