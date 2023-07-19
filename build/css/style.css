@@ -3052,13 +3052,13 @@ button,
   height: 72px;
   top: 50%;
   left: 50%;
-  border-radius: 50%;
+  border-radius: 36px;
   text-align: center;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  outline: 2px solid rgba(255, 21, 83, 0.2);
-  outline-offset: 14px;
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  border: none;
   z-index: 3;
   cursor: pointer;
 }
@@ -3069,35 +3069,31 @@ button,
   bottom: -2px;
   left: -2px;
   right: -2px;
-  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border-radius: 50%;
   z-index: 1;
 }
-.about__play-button:focus svg {
-  fill: #102654;
+.about__play-button:hover::before, .about__play-button:focus::before {
+  background-color: rgb(255, 255, 255);
 }
-.about__play-button.focus-visible:focus {
-  outline-color: #102654;
+.about__play-button:active {
+  background: transparent;
 }
-.about__play-button:focus::before {
-  background: #ffffff;
+.about__play-button:active::before {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 58px;
+  height: 58px;
+  background-color: rgb(255, 255, 255);
 }
-.about__play-button:disabled {
-  opacity: 0.4;
-  outline-color: #102654;
+.about__play-button:hover svg, .about__play-button:focus svg, .about__play-button:active svg {
+  color: #102654;
 }
-.about__play-button:disabled svg {
-  opacity: 0.4;
-  fill: #102654;
-}
-.about__play-button:disabled::before {
-  opacity: 0.4;
-  background: rgb(255, 255, 255);
-}
-
 .about__play-button svg {
   position: absolute;
-  fill: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-35%, -50%);
