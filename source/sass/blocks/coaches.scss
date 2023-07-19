@@ -5,11 +5,11 @@
   max-width: 1160px;
 
   @include vp-1199 {
-    padding: 45px 0 99px;
+    padding: 50px 0 100px;
   }
 
   @include vp-767 {
-    padding: 28px 0 70px 0;
+    padding: 33px 0 70px 0;
   }
 }
 
@@ -46,7 +46,7 @@
 
 .coaches__swiper {
   @include vp-1199 {
-    margin: 0 50px;
+    margin: 0 56px;
   }
 
   @include vp-767 {
@@ -63,7 +63,7 @@
   @include vp-1199 {
     min-width: 268px;
     min-height: 294px;
-    aspect-ratio: 274/294;
+    aspect-ratio: 268/294;
   }
 
   @include vp-767 {
@@ -94,6 +94,7 @@
   text-align: center;
 
   @include vp-1199 {
+    left: 51.5%;
     max-width: 100%;
   }
 }
@@ -111,13 +112,13 @@
   left: 0;
   padding: 55px 30px;
   background-color: $color-sapphire-coaches;
-  overflow-y: auto;
+  overflow-y: hidden;
   transform: scale(1.3);
   opacity: 0;
   transition: transform 0.5s ease 0s;
 
   @include vp-767 {
-    padding: 38px 9px;
+    padding: 60px 9px;
   }
 }
 
@@ -133,12 +134,28 @@
   font-size: 18px;
   line-height: 20px;
   text-align: center;
+
+  @include vp-1199 {
+    margin: 0 9px 0 0;
+  }
+
+  @include vp-767 {
+    margin: 0;
+  }
 }
 
 .coaches__information p {
   margin: 0 0 33px 0;
   text-align: center;
   color: $color-spindle;
+
+  @include vp-1199 {
+    margin: 0 7px 33px 0;
+  }
+
+  @include vp-767 {
+    margin: 0 3px 33px 0;
+  }
 }
 
 .coaches__information ul {
@@ -177,7 +194,7 @@
 
 
   @include vp-767 {
-    top: 52%;
+    top: 53%;
     width: 10px;
     height: 19px;
 
@@ -223,4 +240,8 @@
   top: 60%;
   left: 45%;
   transform: translate(-50%, -50%);
+
+  @include vp-767 {
+    top: 75%;
+  }
 }

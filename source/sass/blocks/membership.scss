@@ -46,7 +46,7 @@
   }
 
   @include vp-767 {
-    padding: 64px 0 70px;
+    padding: 65px 0 70px;
 
     &::after {
       display: none;
@@ -62,12 +62,12 @@
   letter-spacing: 2.5px;
 
   @include vp-1199 {
+    margin: 0 0 10px 0;
     font-size: 42px;
     letter-spacing: 1.26px;
   }
 
   @include vp-767 {
-    margin: 0 0 11px 0;
     font-size: 32px;
     line-height: 38.4px;
     letter-spacing: 0.96px;
@@ -144,7 +144,7 @@
   }
 
   @include vp-1199 {
-    padding: 6px 0 14px;
+    padding: 10px 20px 13px;
     font-size: 18px;
     line-height: 27px;
   }

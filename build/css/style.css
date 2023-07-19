@@ -2463,7 +2463,7 @@ button,
 }
 @media (max-width: 767px) {
   .header__hero-button {
-    margin: 0 -2px;
+    margin: -3px -2px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
@@ -3116,7 +3116,7 @@ button,
 }
 @media (max-width: 767px) {
   .event__wrapper {
-    padding: 70px 0 30px 0;
+    padding: 72px 0 30px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -3143,7 +3143,7 @@ button,
 }
 @media (max-width: 767px) {
   .event__content-wrapper {
-    padding: 50px 43px 51px 43px;
+    padding: 50px 43px;
     width: 100%;
     max-width: 100%;
   }
@@ -3453,7 +3453,7 @@ button,
 }
 @media (max-width: 767px) {
   .membership__wrapper {
-    padding: 64px 0 70px;
+    padding: 65px 0 70px;
   }
   .membership__wrapper::after {
     display: none;
@@ -3469,13 +3469,13 @@ button,
 }
 @media (max-width: 1199px) {
   .membership__title {
+    margin: 0 0 10px 0;
     font-size: 42px;
     letter-spacing: 1.26px;
   }
 }
 @media (max-width: 767px) {
   .membership__title {
-    margin: 0 0 11px 0;
     font-size: 32px;
     line-height: 38.4px;
     letter-spacing: 0.96px;
@@ -3565,7 +3565,7 @@ button,
 }
 @media (max-width: 1199px) {
   .membership__control {
-    padding: 6px 0 14px;
+    padding: 10px 20px 13px;
     font-size: 18px;
     line-height: 27px;
   }
@@ -3809,12 +3809,12 @@ button,
 }
 @media (max-width: 1199px) {
   .coaches__wrapper {
-    padding: 45px 0 99px;
+    padding: 50px 0 100px;
   }
 }
 @media (max-width: 767px) {
   .coaches__wrapper {
-    padding: 28px 0 70px 0;
+    padding: 33px 0 70px 0;
   }
 }
 
@@ -3853,7 +3853,7 @@ button,
 
 @media (max-width: 1199px) {
   .coaches__swiper {
-    margin: 0 50px;
+    margin: 0 56px;
   }
 }
 @media (max-width: 767px) {
@@ -3872,7 +3872,7 @@ button,
   .coaches__item {
     min-width: 268px;
     min-height: 294px;
-    aspect-ratio: 274/294;
+    aspect-ratio: 268/294;
   }
 }
 @media (max-width: 767px) {
@@ -3908,6 +3908,7 @@ button,
 }
 @media (max-width: 1199px) {
   .coaches__item h3 {
+    left: 51.5%;
     max-width: 100%;
   }
 }
@@ -3925,7 +3926,7 @@ button,
   left: 0;
   padding: 55px 30px;
   background-color: rgba(16, 38, 84, 0.89);
-  overflow-y: auto;
+  overflow-y: hidden;
   -webkit-transform: scale(1.3);
       -ms-transform: scale(1.3);
           transform: scale(1.3);
@@ -3937,7 +3938,7 @@ button,
 }
 @media (max-width: 767px) {
   .coaches__information {
-    padding: 38px 9px;
+    padding: 60px 9px;
   }
 }
 
@@ -3956,11 +3957,31 @@ button,
   line-height: 20px;
   text-align: center;
 }
+@media (max-width: 1199px) {
+  .coaches__information h4 {
+    margin: 0 9px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .coaches__information h4 {
+    margin: 0;
+  }
+}
 
 .coaches__information p {
   margin: 0 0 33px 0;
   text-align: center;
   color: #b6bdcc;
+}
+@media (max-width: 1199px) {
+  .coaches__information p {
+    margin: 0 7px 33px 0;
+  }
+}
+@media (max-width: 767px) {
+  .coaches__information p {
+    margin: 0 3px 33px 0;
+  }
 }
 
 .coaches__information ul {
@@ -4005,7 +4026,7 @@ button,
 }
 @media (max-width: 767px) {
   .coaches__button {
-    top: 52%;
+    top: 53%;
     width: 10px;
     height: 19px;
   }
@@ -4064,6 +4085,11 @@ button,
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .coaches__button svg {
+    top: 75%;
+  }
 }
 
 .features {
