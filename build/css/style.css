@@ -2354,7 +2354,6 @@ button,
   -ms-grid-column-align: end;
       justify-self: end;
   text-align: end;
-  align-self: center;
 }
 @media (max-width: 1199px) {
   .header__hero-wrapper {
