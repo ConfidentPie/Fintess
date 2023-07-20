@@ -17,12 +17,6 @@
     font-weight: 700;
   }
 
-  &:active {
-    background-color: $color-default-white;
-    color: $color-sapphire;
-    font-weight: 700;
-  }
-
   @include vp-767 {
     padding: 20px 10px;
   }

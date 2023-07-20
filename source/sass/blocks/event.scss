@@ -42,6 +42,12 @@
   }
 }
 
+.event__content-wrapper .button:active {
+  background-color: $color-default-white;
+  color: $color-sapphire;
+  font-weight: 700;
+}
+
 .event__main-content {
   display: grid;
   grid-template-columns: 1fr 1fr;

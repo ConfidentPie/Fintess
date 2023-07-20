@@ -1,15 +1,10 @@
 .custom-input {
   position: relative;
-
-  &.is-invalid {
-    input {
-      border-bottom: 1px solid $color-crimson;
-    }
   }
 
   .input-message {
     position: absolute;
-    top: -15px;
+    top: 35px;
     left: 0;
 
     &.is-invalid {
@@ -18,4 +13,7 @@
       color: $color-crimson;
     }
   }
-}
+
+  .custom-input.is-invalid input  {
+      border-bottom: 1px solid $color-crimson;
+  }
