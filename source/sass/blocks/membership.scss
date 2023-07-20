@@ -212,6 +212,12 @@
     border: solid 7px;
     border-image: $button-buy-gradient;
     border-image-slice: 7;
+
+    & .membership__button {
+      color: $color-default-white;
+      background: $button-buy-gradient;
+      outline-color: transparent;
+    }
   }
 
   @include vp-1199 {
@@ -310,23 +316,17 @@
     padding: 22px 42px;
   }
 
-  @include hover {
-    color: $color-default-white;
-    background: $button-buy-gradient;
-    outline-color: transparent;
-  }
-
   &:focus {
     color: $color-default-white;
     background: $button-buy-gradient;
     outline-color: transparent;
   }
+}
 
-  &:active {
-    background: $button-buy-gradient;
-    color: $color-default-white-active;
-    outline-color: transparent;
-  }
+.membership__item .membership__button:active {
+  background: $button-buy-gradient;
+  color: $color-default-white-active;
+  outline-color: transparent;
 }
 
 .membership__button.is--disabled {

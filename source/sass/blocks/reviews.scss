@@ -143,13 +143,13 @@
   background-repeat: no-repeat;
   cursor: pointer;
 
-  @include hover-focus {
-    opacity: 50%;
+  &:hover,
+  &:focus {
     border-radius: 50%;
     border: 1px solid $color-sapphire;
   }
 
-  @include active {
+  &:active {
     background-color: $color-sapphire;
     fill: $color-default-white;
   }
@@ -176,6 +176,10 @@
   &--next {
     right: -17px;
 
+    &:active svg {
+      color: #fff;
+    }
+
     @include vp-1199 {
       right: -22px;
     }
@@ -189,6 +193,10 @@
   &--prev {
     left: -17px;
     transform: rotate(180deg);
+
+    &:active svg {
+      color: #fff;
+    }
 
     @include vp-1199 {
       left: -22px;

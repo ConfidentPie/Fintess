@@ -192,6 +192,12 @@
     top: 47%;
   }
 
+  @media (min-width: 1200px) and (max-width: 1279px) {
+    &:hover,
+    &:focus {
+      border: none;
+    }
+  }
 
   @include vp-767 {
     top: 53%;
@@ -220,6 +226,10 @@
       right: -20px;
     }
 
+    @media (min-width: 1200px) and (max-width: 1279px) {
+      right: -55px;
+    }
+
     @include vp-767 {
       right: 3px;
     }
@@ -234,8 +244,12 @@
       color: #fff;
     }
 
-    @include vp-1279 {
+    @include vp-1199 {
       left: -20px;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1279px) {
+      left: -55px;
     }
 
     @include vp-767 {

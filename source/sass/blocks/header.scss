@@ -156,6 +156,12 @@
   }
 }
 
+.header__hero-wrapper .header__hero-button:active {
+  background-color: $color-default-white;
+  color: $color-sapphire;
+  font-weight: 700;
+}
+
 .header__hero-title {
   grid-row: 1/2;
   grid-column: 2/3;
