@@ -2637,31 +2637,60 @@ button,
   height: 72px;
   top: 50%;
   left: 50%;
-  border-radius: 36px;
   text-align: center;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  border-radius: 50%;
+  background: transparent;
   border: none;
   z-index: 3;
   cursor: pointer;
 }
 
 .about__play-button::before {
+  display: block;
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   position: absolute;
+  width: 72px;
+  height: 72px;
   content: "";
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
-  border-radius: 50%;
+  top: 0;
+  left: 0;
   z-index: 1;
+  border-radius: 50%;
+}
+
+.about__play-button::after {
+  content: "";
+  position: absolute;
+  -webkit-transform: translate(-14%, -14%);
+  -ms-transform: translate(-14%, -14%);
+  transform: translate(-14%, -14%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  inset: 0;
+  opacity: 0.2;
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  border: 2px solid transparent;
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff));
+  -webkit-mask: linear-gradient(#ffffff 0 0) padding-box, linear-gradient(#ffffff 0 0);
+  mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff));
+  mask: linear-gradient(#ffffff 0 0) padding-box, linear-gradient(#ffffff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 .about__play-button:hover::before,
 .about__play-button:focus::before {
-  background-color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+}
+
+.about__play-button:hover::after,
+.about__play-buttonfocus::after {
+  opacity: 1;
+  border: solid 2px #102654;
 }
 
 .about__play-button:active {
@@ -2676,12 +2705,25 @@ button,
   transform: translate(-50%, -50%);
   width: 58px;
   height: 58px;
-  background-color: rgb(255, 255, 255);
 }
 
 .about__play-button:hover svg,
 .about__play-button:focus svg,
 .about__play-button:active svg {
+  color: #102654;
+}
+
+.about__play-button.is-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+}
+
+.about__play-button.is-disabled::before {
+  background: rgb(255, 255, 255);
+}
+
+.about__play-button.is-disabled svg {
   color: #102654;
 }
 
@@ -4318,6 +4360,36 @@ button,
     transform: translateX(-50%);
     width: 266px;
     height: 167px;
+  }
+
+  .about__play-button {
+    width: 73px;
+    height: 73px;
+  }
+
+  .about__play-button::before {
+    width: 52px;
+    height: 52px;
+  }
+
+  .about__play-button::after {
+    width: 73px;
+    height: 73px;
+  }
+
+  .about__play-button svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .about__play-button:active::before {
+    width: 48.5px;
+    height: 48.5px;
+  }
+
+  .about__play-button svg {
+    top: 36%;
+    left: 36%;
   }
 
   .event__wrapper {
