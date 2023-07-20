@@ -3097,8 +3097,6 @@ button,
   .about__play-button::before {
     width: 52px;
     height: 52px;
-    top: 10px;
-    left: 10px;
   }
   .about__play-button::after {
     width: 73px;
@@ -3158,6 +3156,12 @@ button,
       -ms-transform: translate(-35%, -50%);
           transform: translate(-35%, -50%);
   z-index: 4;
+}
+@media (max-width: 1199px) {
+  .about__play-button svg {
+    top: 36%;
+    left: 36%;
+  }
 }
 
 .event__wrapper {

@@ -246,8 +246,6 @@
     &::before {
       width: 52px;
       height: 52px;
-      top: 10px;
-    left: 10px;
     }
 
     &::after {
@@ -320,4 +318,9 @@
   left: 50%;
   transform: translate(-35%, -50%);
   z-index: 4;
+
+  @include vp-1199 {
+    top: 36%;
+    left: 36%
+  }
 }
